@@ -9,7 +9,16 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## About
+
+Customizable native-like sheet alert controller with three action types: separately, inner, none.
+
+### Separately action type
+
+### Inner action type
+
+### None action type
+
 
 ## Installation
 
