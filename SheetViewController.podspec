@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   Customizable native-like sheet alert controller with three action types: separately, inner, none.
                        DESC
 
-  s.homepage         = 'https://github.com/antonyereshchenko@gmail.com/SheetViewController'
+  s.homepage         = 'https://github.com/bananaRanger/SheetViewController.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anton Yereshchenko' => 'antonyereshchenko@gmail.com' }
