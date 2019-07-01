@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4021E4E822CA3EC80032B236 /* StorageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4E722CA3EC80032B236 /* StorageInfo.swift */; };
+		4021E4EA22CA3ED00032B236 /* StorageInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4021E4E922CA3ED00032B236 /* StorageInfo.xib */; };
+		4021E4EC22CA4D6B0032B236 /* DiskManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4EB22CA4D6B0032B236 /* DiskManagementView.swift */; };
 		5B2206B96E9B0567334F2D59 /* Pods_SheetViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169CA541038021A9391B9A2B /* Pods_SheetViewController_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* DiskManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* DiskManagementViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -31,11 +34,14 @@
 		169CA541038021A9391B9A2B /* Pods_SheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheetViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250BD373E9054024BB2F5086 /* Pods-SheetViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheetViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-SheetViewController_Tests/Pods-SheetViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		360A7F5EFD6DB08273E21D92 /* Pods-SheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheetViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-SheetViewController_Example/Pods-SheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4021E4E722CA3EC80032B236 /* StorageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfo.swift; sourceTree = "<group>"; };
+		4021E4E922CA3ED00032B236 /* StorageInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageInfo.xib; sourceTree = "<group>"; };
+		4021E4EB22CA4D6B0032B236 /* DiskManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManagementView.swift; sourceTree = "<group>"; };
 		59CF51F3DD060C5EF91B3A6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SheetViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* DiskManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManagementViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,11 +100,14 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* DiskManagementViewController.swift */,
+				4021E4EB22CA4D6B0032B236 /* DiskManagementView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				4021E4E722CA3EC80032B236 /* StorageInfo.swift */,
+				4021E4E922CA3ED00032B236 /* StorageInfo.xib */,
 			);
 			name = "Example for SheetViewController";
 			path = SheetViewController;
@@ -246,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				4021E4EA22CA3ED00032B236 /* StorageInfo.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -334,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4021E4EC22CA4D6B0032B236 /* DiskManagementView.swift in Sources */,
+				607FACD81AFB9204008FA782 /* DiskManagementViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4021E4E822CA3EC80032B236 /* StorageInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,30 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Disk Management View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SheetViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="DiskManagementViewController" customModule="SheetViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="DiskManagementView" customModule="SheetViewController_Example" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a26-ZJ-GvN">
+                                <rect key="frame" x="94" y="250" width="187.5" height="167"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disk" translatesAutoresizingMaskIntoConstraints="NO" id="9Km-ep-NZ3">
+                                        <rect key="frame" x="61.5" y="51.5" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9Km-ep-NZ3" secondAttribute="height" id="EL1-fb-iRM"/>
+                                            <constraint firstAttribute="width" constant="64" id="Ntt-QO-g84"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="9Km-ep-NZ3" firstAttribute="centerX" secondItem="a26-ZJ-GvN" secondAttribute="centerX" id="kTL-wC-cs9"/>
+                                    <constraint firstItem="9Km-ep-NZ3" firstAttribute="centerY" secondItem="a26-ZJ-GvN" secondAttribute="centerY" id="sk0-0b-RJn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGY-Le-Bk8">
+                                <rect key="frame" x="94" y="433" width="187.5" height="83.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-nn-swl">
+                                        <rect key="frame" x="30" y="26.5" width="127" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Disk management"/>
+                                        <connections>
+                                            <action selector="btnDiskManagementTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="voF-5M-kKA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fB0-nn-swl" firstAttribute="centerX" secondItem="NGY-Le-Bk8" secondAttribute="centerX" id="8OL-rZ-d3g"/>
+                                    <constraint firstItem="fB0-nn-swl" firstAttribute="centerY" secondItem="NGY-Le-Bk8" secondAttribute="centerY" id="V1Y-9Y-Mfs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a26-ZJ-GvN" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.5" id="0bo-dy-9bj"/>
+                            <constraint firstItem="NGY-Le-Bk8" firstAttribute="centerX" secondItem="a26-ZJ-GvN" secondAttribute="centerX" id="4DA-6I-zz3"/>
+                            <constraint firstItem="a26-ZJ-GvN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Bzc-KW-Akq"/>
+                            <constraint firstItem="NGY-Le-Bk8" firstAttribute="top" secondItem="a26-ZJ-GvN" secondAttribute="bottom" constant="16" id="Xww-gI-VOV"/>
+                            <constraint firstItem="NGY-Le-Bk8" firstAttribute="leading" secondItem="a26-ZJ-GvN" secondAttribute="leading" id="bTy-mV-1I0"/>
+                            <constraint firstItem="a26-ZJ-GvN" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.25" id="fMh-ZX-KwX"/>
+                            <constraint firstItem="a26-ZJ-GvN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="g68-XC-UlM"/>
+                            <constraint firstItem="NGY-Le-Bk8" firstAttribute="height" secondItem="a26-ZJ-GvN" secondAttribute="height" multiplier="0.5" id="kfJ-WM-X7h"/>
+                            <constraint firstItem="NGY-Le-Bk8" firstAttribute="trailing" secondItem="a26-ZJ-GvN" secondAttribute="trailing" id="u3v-Xq-Lym"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="actionView" destination="NGY-Le-Bk8" id="rmG-Lt-Wzh"/>
+                            <outlet property="btnDiskManagement" destination="fB0-nn-swl" id="wpW-7u-jqn"/>
+                            <outlet property="contentView" destination="a26-ZJ-GvN" id="NEi-nT-me3"/>
+                            <outlet property="imgIcon" destination="9Km-ep-NZ3" id="CwE-0b-vZq"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Disk" width="48" height="48"/>
+    </resources>
 </document>
