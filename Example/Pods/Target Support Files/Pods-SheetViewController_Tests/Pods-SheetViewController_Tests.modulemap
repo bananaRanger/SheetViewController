@@ -1,0 +1,6 @@
+framework module Pods_SheetViewController_Tests {
+  umbrella header "Pods-SheetViewController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

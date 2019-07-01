@@ -1,0 +1,16 @@
+PODS:
+  - SheetViewController (0.1.0)
+
+DEPENDENCIES:
+  - SheetViewController (from `../`)
+
+EXTERNAL SOURCES:
+  SheetViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SheetViewController: 7745a2f7e249eea1660debff2a135b16d91d6f6b
+
+PODFILE CHECKSUM: 6ed7b8a4e274ea96cfce5e2638f5190e3e4819b7
+
+COCOAPODS: 1.6.0
