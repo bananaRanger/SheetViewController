@@ -5,20 +5,79 @@
 [![License](https://img.shields.io/cocoapods/l/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+<p align="center">
+  <img width="540" height="186" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
+</p>
 
 ## About
 
 Customizable native-like sheet alert controller with three action types: separately, inner, none.
 
+### Demo
+
+Interaction with ```SheetViewController``` that have ```.inner``` action type:
+
+<p align="center">
+  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.mov?raw=true">
+</p>
+
 ### Separately action type
+
+```
+let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .separately)
+```
+
+#### Portrait
+
+<p align="center">
+	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_portrait.png?raw=true">
+</p>
+
+#### Landscape
+
+<p align="center">
+	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_landscape.png?raw=true">
+</p>
 
 ### Inner action type
 
+```
+let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .inner)
+```
+
+#### Portrait
+
+<p align="center">
+	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_portrait.png?raw=true">
+</p>
+
+#### Landscape
+
+<p align="center">
+	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_landscape.png?raw=true">
+</p>
+
 ### None action type
 
+```
+let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .none)
+```
+
+#### Portrait
+
+<p align="center">
+	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_portrait.png?raw=true">
+</p>
+
+#### Landscape
+
+<p align="center">
+	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_landscape.png?raw=true">
+</p>
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
 
