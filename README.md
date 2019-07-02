@@ -9,7 +9,16 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## About
+
+Customizable native-like sheet alert controller with three action types: separately, inner, none.
+
+### Separately action type
+
+### Inner action type
+
+### None action type
+
 
 ## Installation
 
@@ -17,13 +26,28 @@ SheetViewController is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SheetViewController'
+inhibit_all_warnings!
+
+target 'YOUR-TARGET-NAME' do
+  use_frameworks!
+	pod 'SheetViewController'
+end
 ```
 
 ## Author
 
-antonyereshchenko@gmail.com
+Anton Yereshchenko
 
 ## License
 
 SheetViewController is available under the MIT license. See the LICENSE file for more info.
+
+## Inspired by
+
+Designing for iPhone in Figma - https://setproduct.com/ios
+
+## Used in project
+
+Icons:
+
+Icons8 - https://icons8.com
