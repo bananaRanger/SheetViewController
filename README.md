@@ -23,7 +23,7 @@ Interaction with ```SheetViewController``` that have ```.inner``` action type:
 
 ### Separately action type
 
-```
+```swift
 let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .separately)
 ```
 
@@ -41,7 +41,7 @@ let alert = SheetViewController.alert(with: <title>, message: <message>, actionT
 
 ### Inner action type
 
-```
+```swift
 let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .inner)
 ```
 
@@ -59,7 +59,7 @@ let alert = SheetViewController.alert(with: <title>, message: <message>, actionT
 
 ### None action type
 
-```
+```swift
 let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .none)
 ```
 
@@ -91,6 +91,26 @@ target 'YOUR-TARGET-NAME' do
   use_frameworks!
 	pod 'SheetViewController'
 end
+```
+
+## Usage
+
+```swift
+// 'titleMessage' - title for alert.
+// 'message' - message for alert.
+// 'cancelTitle' - title for bottom button.
+// 'cancelHandler' - the handler of bottom button click.
+//
+// 'customRowView' - the object of class 'UIView' or his inheritors.
+// 'row' - the object of class 'SheetItemActionView'.
+
+let alert = SheetViewController.alert(with: titleMessage, message: message, actionType: .inner)
+alert.setCancelButton(title: cancelTitle, and: cancelHandler)
+
+alert.addView(customRowView)
+alert.addRow(actionView: row)
+
+present(alert, animated: true, completion: nil)
 ```
 
 ## Author
