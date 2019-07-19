@@ -1,5 +1,5 @@
 PODS:
-  - SheetViewController (0.1.0)
+  - SheetViewController (1.0.1)
 
 DEPENDENCIES:
   - SheetViewController (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SheetViewController: 7745a2f7e249eea1660debff2a135b16d91d6f6b
+  SheetViewController: 5708b16d6207b1c4a4b07498d449053fe9483575
 
 PODFILE CHECKSUM: 6ed7b8a4e274ea96cfce5e2638f5190e3e4819b7
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.3

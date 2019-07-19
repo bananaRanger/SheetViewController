@@ -7,316 +7,302 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1250DBF7502BBCF73220EDC08072130F /* Pods-SheetViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4FC43C3401E27BD8589652502E7309 /* Pods-SheetViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12E18879D32B86C9EE1301C5F781CDB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		3892B157B6B4FA3D3A4BD0964B3D5E0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		4021E4CC22C9F3E60032B236 /* AnimatedPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4AF22C9ED680032B236 /* AnimatedPresenting.swift */; };
-		4021E4CD22C9F3E60032B236 /* AnimatedDismissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4B022C9ED680032B236 /* AnimatedDismissing.swift */; };
-		4021E4CE22C9F3E60032B236 /* ContainerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A422C9ED680032B236 /* ContainerConfiguration.swift */; };
-		4021E4CF22C9F3E60032B236 /* ContainerViewNoneActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A522C9ED680032B236 /* ContainerViewNoneActionBuilder.swift */; };
-		4021E4D022C9F3E60032B236 /* ContainerViewSeparatelyActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A622C9ED680032B236 /* ContainerViewSeparatelyActionBuilder.swift */; };
-		4021E4D122C9F3E60032B236 /* ContainerViewInnerActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A722C9ED680032B236 /* ContainerViewInnerActionBuilder.swift */; };
-		4021E4D222C9F3E60032B236 /* ContainerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A822C9ED680032B236 /* ContainerViewBuilder.swift */; };
-		4021E4D322C9F3E60032B236 /* SheetContentViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4AA22C9ED680032B236 /* SheetContentViewBuilder.swift */; };
-		4021E4D422C9F3E60032B236 /* SheetActionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4AC22C9ED680032B236 /* SheetActionViewBuilder.swift */; };
-		4021E4D522C9F3E60032B236 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4AD22C9ED680032B236 /* ViewBuilder.swift */; };
-		4021E4D622C9F3E60032B236 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49F22C9ED680032B236 /* UIView.swift */; };
-		4021E4D722C9F3E60032B236 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A022C9ED680032B236 /* UIColor.swift */; };
-		4021E4D822C9F3E60032B236 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4A122C9ED680032B236 /* UILabel.swift */; };
-		4021E4D922C9F3E60032B236 /* SheetTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E4B222C9ED680032B236 /* SheetTypeFactory.swift */; };
-		4021E4DA22C9F3E60032B236 /* SheetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49322C9ED680032B236 /* SheetActionView.swift */; };
-		4021E4DB22C9F3E60032B236 /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49422C9ED680032B236 /* SheetContentView.swift */; };
-		4021E4DC22C9F3E60032B236 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49522C9ED680032B236 /* Contract.swift */; };
-		4021E4DD22C9F3E60032B236 /* SheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49622C9ED680032B236 /* SheetContainerView.swift */; };
-		4021E4DE22C9F3E60032B236 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49722C9ED680032B236 /* SheetViewController.swift */; };
-		4021E4DF22C9F3E60032B236 /* SheetItemActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49822C9ED680032B236 /* SheetItemActionView.swift */; };
-		4021E4E022C9F3E60032B236 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49C22C9ED680032B236 /* CustomView.swift */; };
-		4021E4E122C9F3E60032B236 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E49D22C9ED680032B236 /* ClickableView.swift */; };
-		4021E4E422C9FE020032B236 /* Contract.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4021E49522C9ED680032B236 /* Contract.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		81F64F20FDFE48919E15D22448A3AE3A /* SheetViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9E7D23C1A174ECC40282E2EF82554 /* SheetViewController-dummy.m */; };
-		8C6E6CE4FAED7AB4A664B30960DB1229 /* Pods-SheetViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D32CDEAA8AFBB8FE10BACD052EDF158F /* Pods-SheetViewController_Tests-dummy.m */; };
-		9EAB8D6B6257D8FEA81AF60CFCF1771B /* Pods-SheetViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7129CAB4F2496AFD67DAFF24C6F66799 /* Pods-SheetViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B435F5B24527318A8E1009218716B9B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		B4DE16EE9CA48E5C31DA1D4812ADB263 /* Pods-SheetViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D22D15A1D6A6664161E43D282B08193 /* Pods-SheetViewController_Example-dummy.m */; };
-		EA64889CB7FEFCFAF40AA2FB4BE45F23 /* SheetViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DB399A5857D50EDB93214D12B42551 /* SheetViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		021A3649CA74E872F7ECD888173AD866 /* Pods-SheetViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F40ACF248D79A81F42461134D11E51A3 /* Pods-SheetViewController_Tests-dummy.m */; };
+		0B39F70551BFF82392C72709CCAC2FAC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */; };
+		147EA9AEC84C6C7FFDB0A8E0F186139F /* SheetContentViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */; };
+		2894FA25CCD84B8EE3E77A14FF8722E8 /* ContainerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */; };
+		33784922B6205AB97E38058E28CFEACA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */; };
+		35C0B56CFDD9C86540F0B7B349A248AB /* ContainerViewInnerActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */; };
+		3A12C854C6A0090F2F4AFB43532B73C2 /* SheetViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */; };
+		400E17585C3DEFAC8CFD537E291507B1 /* SheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */; };
+		4DCDE907CADAAD0531D0B12761C762E9 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */; };
+		5077337566D536992A35F0D07E96DDA9 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E1358218688659358A0C6915196F1 /* Contract.swift */; };
+		605C4BEEED62C1C135EDBBF39B5ED829 /* SheetTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */; };
+		6098811BCDC3E31A0AFC3BE56D991EE1 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */; };
+		667B00AAF126DB4E26782EE69E2C6CCA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */; };
+		6A06B38CF4FFD94DBD0557B5DACAC438 /* SheetActionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */; };
+		6F5FF09C77186DDD5EA061BDA1DAE43A /* SheetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */; };
+		70F47958A540AE8529DF838D7F2B3E9D /* ContainerViewSeparatelyActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */; };
+		78E39979D10064DB9C2DE03F89902EDE /* ContainerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */; };
+		852BE0570A512BBA3DD9E11F87C7D72E /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */; };
+		871BAC3DD323B398F13F6484C5E47FFA /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */; };
+		911DC464BD5BA65D9D1B1E954D854DC6 /* Pods-SheetViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB69E0E96B02EDD6124D032AF14A159 /* Pods-SheetViewController_Example-dummy.m */; };
+		92A00EA45A91BCF0393FCC75C290F0E1 /* Pods-SheetViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2745F45BB83FBC7340D5926EFBAFAC /* Pods-SheetViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97CF024AC3261AB543C7379E35751ACE /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */; };
+		9A26372687BB7285D3EF32793CBA171A /* AnimatedDismissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */; };
+		A08644F88EF2A6B10DD3E6A2314398A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AD09F3721B65F8409D46934065D708F8 /* SheetViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC7D4EFF26C3D444BB20A4B6D01ADDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C0FF95D7C5ABE9048C795D3726AB7441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C711456357998FCC75219A85B29A31BA /* Pods-SheetViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AA0F24E7C0F545D13459AF42FD3FC2 /* Pods-SheetViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD585DC49FE0CF6B94289F2993732F41 /* ContainerViewNoneActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */; };
+		D2C8DDFA87F5CD8F04FADEE1B449C2F7 /* AnimatedPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */; };
+		F47871237B852E12C02656E83C3BD375 /* SheetItemActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38DEBFB29E575FE38421340744CEE86F /* PBXContainerItemProxy */ = {
+		03C52EA53279D2FC32ED3119FFCDB6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B1D81E6B277541327B52343B705D5217;
-			remoteInfo = SheetViewController;
-		};
-		AF9D20CE8B53B9CB354C3FF8CCCAA1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CE7E938889AE7E719168B36C77A592E;
+			remoteGlobalIDString = C88D6DBD61C25DD9B19EF057CDAB2D25;
 			remoteInfo = "Pods-SheetViewController_Example";
+		};
+		9832D5218275CDCB74595B9329824A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD5BEC8D8A2A6C424A8E77A45CAE027;
+			remoteInfo = SheetViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10D732A8A775F4CA7933DFD6DAC169F7 /* SheetViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SheetViewController.modulemap; sourceTree = "<group>"; };
-		1558AB129C4BF13C203B702F9F3D79B1 /* Pods-SheetViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-Info.plist"; sourceTree = "<group>"; };
-		1645CD0AA62833B3F79635FE0940EC9F /* Pods-SheetViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1FEE9D3390A6AC802EEB205BA10E2EED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2D22D15A1D6A6664161E43D282B08193 /* Pods-SheetViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		34AA8863D2063DDFB5DE4045BAB1B35F /* Pods-SheetViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		34DC14F9874E685E1812E56045DFC5EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3840ED73F5A4FD2AA6FD2247228ED122 /* Pods-SheetViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4021E49322C9ED680032B236 /* SheetActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetActionView.swift; sourceTree = "<group>"; };
-		4021E49422C9ED680032B236 /* SheetContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
-		4021E49522C9ED680032B236 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
-		4021E49622C9ED680032B236 /* SheetContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetContainerView.swift; sourceTree = "<group>"; };
-		4021E49722C9ED680032B236 /* SheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
-		4021E49822C9ED680032B236 /* SheetItemActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetItemActionView.swift; sourceTree = "<group>"; };
-		4021E49C22C9ED680032B236 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		4021E49D22C9ED680032B236 /* ClickableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
-		4021E49F22C9ED680032B236 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		4021E4A022C9ED680032B236 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		4021E4A122C9ED680032B236 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		4021E4A422C9ED680032B236 /* ContainerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerConfiguration.swift; sourceTree = "<group>"; };
-		4021E4A522C9ED680032B236 /* ContainerViewNoneActionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewNoneActionBuilder.swift; sourceTree = "<group>"; };
-		4021E4A622C9ED680032B236 /* ContainerViewSeparatelyActionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewSeparatelyActionBuilder.swift; sourceTree = "<group>"; };
-		4021E4A722C9ED680032B236 /* ContainerViewInnerActionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewInnerActionBuilder.swift; sourceTree = "<group>"; };
-		4021E4A822C9ED680032B236 /* ContainerViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewBuilder.swift; sourceTree = "<group>"; };
-		4021E4AA22C9ED680032B236 /* SheetContentViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetContentViewBuilder.swift; sourceTree = "<group>"; };
-		4021E4AC22C9ED680032B236 /* SheetActionViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetActionViewBuilder.swift; sourceTree = "<group>"; };
-		4021E4AD22C9ED680032B236 /* ViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
-		4021E4AF22C9ED680032B236 /* AnimatedPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedPresenting.swift; sourceTree = "<group>"; };
-		4021E4B022C9ED680032B236 /* AnimatedDismissing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDismissing.swift; sourceTree = "<group>"; };
-		4021E4B222C9ED680032B236 /* SheetTypeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetTypeFactory.swift; sourceTree = "<group>"; };
-		424BC7F8D673E0907B85F1A2C79D2284 /* SheetViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SheetViewController-Info.plist"; sourceTree = "<group>"; };
-		51F9E7D23C1A174ECC40282E2EF82554 /* SheetViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SheetViewController-dummy.m"; sourceTree = "<group>"; };
-		5A4FC43C3401E27BD8589652502E7309 /* Pods-SheetViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5FDFBB493DC358527D618E828A6A741E /* SheetViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SheetViewController.xcconfig; sourceTree = "<group>"; };
-		6C5E81EADCEF1BCB0360FA4706A537E3 /* Pods_SheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheetViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7129CAB4F2496AFD67DAFF24C6F66799 /* Pods-SheetViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		86C24CA52F8B930A2D79B5429AAA024A /* Pods-SheetViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		86DB399A5857D50EDB93214D12B42551 /* SheetViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-umbrella.h"; sourceTree = "<group>"; };
-		8EF52023559BBA08622282C828B97B34 /* Pods-SheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8F98F7144179E76E4CE4085195CE154A /* SheetViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SheetViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		941D0B623D403B2F88D3FCEDC0DBAE19 /* Pods-SheetViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A77C2D9B219D2D2166D4A92F462FA47C /* Pods-SheetViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-Info.plist"; sourceTree = "<group>"; };
-		AC1A64E5DE5003E13D3FB36BE8DF4D1F /* Pods-SheetViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Example.modulemap"; sourceTree = "<group>"; };
-		BB7A415605877402688EF398BAB9CD0E /* Pods-SheetViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D1E605BE38AF6F0BE7EE5DA880B12B8A /* SheetViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-prefix.pch"; sourceTree = "<group>"; };
-		D32CDEAA8AFBB8FE10BACD052EDF158F /* Pods-SheetViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		D907286BBC8499F3FE66369FCC1864FA /* Pods-SheetViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D98D4C1E78FC8223903951A4BBE7344B /* Pods-SheetViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E3D6077A22EDE678193306BA6AC11756 /* Pods-SheetViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SheetViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EF38551CFF07E1C9E8419B2F00C1BC6B /* SheetViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SheetViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FDD2D5E369DF033E72EDA79E8CB7BAEE /* Pods_SheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheetViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetTypeFactory.swift; sourceTree = "<group>"; };
+		151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SheetViewController_Tests.framework; path = "Pods-SheetViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		2D0EEED901E4345816BDE26E64CB19AC /* SheetViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-prefix.pch"; sourceTree = "<group>"; };
+		2D4E1358218688659358A0C6915196F1 /* Contract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionViewBuilder.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		323C463D944A57B48F5B5764596EFA99 /* Pods-SheetViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		33F122D791666177D5F3BBABF22E0348 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		39155B877CEF27E16C5A156DF58422AA /* SheetViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SheetViewController.modulemap; sourceTree = "<group>"; };
+		3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewBuilder.swift; sourceTree = "<group>"; };
+		43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionView.swift; sourceTree = "<group>"; };
+		454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
+		4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetItemActionView.swift; sourceTree = "<group>"; };
+		4A5EA107B150D0400E618A2D708E92FF /* Pods-SheetViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4D1A0C6D94DF7A66623BCF1F28FC7159 /* SheetViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SheetViewController-Info.plist"; sourceTree = "<group>"; };
+		535D6871DDC191107BBF2F90ACE33E4E /* Pods-SheetViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-Info.plist"; sourceTree = "<group>"; };
+		544FF656F980B35E10AF050165E6AD3E /* Pods-SheetViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BB69E0E96B02EDD6124D032AF14A159 /* Pods-SheetViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		5D2E8CC9F57931E29DFB70671FFD116A /* Pods-SheetViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContainerView.swift; sourceTree = "<group>"; };
+		61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentViewBuilder.swift; sourceTree = "<group>"; };
+		612E93F0F293E6BC3E7FF46621240EC4 /* Pods-SheetViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewSeparatelyActionBuilder.swift; sourceTree = "<group>"; };
+		63DECAE1B141594B09846ED01A868EBF /* Pods-SheetViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SheetViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6C953B36839ED0DAA5901EF8A102BEEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		8555C9CD44647899513B02CD19F82554 /* SheetViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SheetViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-umbrella.h"; sourceTree = "<group>"; };
+		99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
+		9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewInnerActionBuilder.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D94F596EED531F875FB28B7DB6DB101 /* Pods-SheetViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Example.modulemap"; sourceTree = "<group>"; };
+		B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedPresenting.swift; sourceTree = "<group>"; };
+		B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SheetViewController.framework; path = SheetViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC936773D6FCCB7AF244AF214A90FBE5 /* Pods_SheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SheetViewController_Example.framework; path = "Pods-SheetViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C0BEAF4A6C3A78DC34A3A060C229DEFC /* Pods-SheetViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SheetViewController.xcconfig; sourceTree = "<group>"; };
+		C8AA0F24E7C0F545D13459AF42FD3FC2 /* Pods-SheetViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerConfiguration.swift; sourceTree = "<group>"; };
+		D40F6BCEFA437265E2E091D04D50FEB6 /* Pods-SheetViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewNoneActionBuilder.swift; sourceTree = "<group>"; };
+		E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SheetViewController-dummy.m"; sourceTree = "<group>"; };
+		E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedDismissing.swift; sourceTree = "<group>"; };
+		EB2745F45BB83FBC7340D5926EFBAFAC /* Pods-SheetViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		EF81DC1F09BFFD6F8ED1B5ADA315BA69 /* Pods-SheetViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-Info.plist"; sourceTree = "<group>"; };
+		F40ACF248D79A81F42461134D11E51A3 /* Pods-SheetViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		024BF6E0F1BDCCC0C6A1CC6A920A1BAE /* Frameworks */ = {
+		4FFB7F3A4CBD526E1324414D56574E27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E18879D32B86C9EE1301C5F781CDB3 /* Foundation.framework in Frameworks */,
+				BFC7D4EFF26C3D444BB20A4B6D01ADDD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C15381D5843ECD2B387D727A7DDF5D8A /* Frameworks */ = {
+		89BB2D2E8A2D7C0716B06EB5AA796639 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B435F5B24527318A8E1009218716B9B2 /* Foundation.framework in Frameworks */,
+				C0FF95D7C5ABE9048C795D3726AB7441 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7FAA9039152F7AEACAAC2A174E42FD2 /* Frameworks */ = {
+		D75810352BB50CE24F5E18AB2539FD64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3892B157B6B4FA3D3A4BD0964B3D5E0D /* Foundation.framework in Frameworks */,
+				A08644F88EF2A6B10DD3E6A2314398A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0662BCF62125314441EE3AB000353DD0 /* SheetViewController */ = {
+		048A197DB5DC6B204CA3DFAD5B33B40E /* SheetViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4021E4AE22C9ED680032B236 /* AnimatedTransitioning */,
-				4021E4A222C9ED680032B236 /* Builder */,
-				4021E49E22C9ED680032B236 /* Extensions */,
-				4021E4B122C9ED680032B236 /* Factory */,
-				4021E49222C9ED680032B236 /* SheetViewController */,
-				4021E49B22C9ED680032B236 /* Views */,
-				8F1DDF46640A9E209865F584ABC57601 /* Pod */,
-				84DE2AC20F68528DECB4E98CE4E53A42 /* Support Files */,
-			);
-			name = SheetViewController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		4021E49222C9ED680032B236 /* SheetViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4021E49322C9ED680032B236 /* SheetActionView.swift */,
-				4021E49422C9ED680032B236 /* SheetContentView.swift */,
-				4021E49522C9ED680032B236 /* Contract.swift */,
-				4021E49622C9ED680032B236 /* SheetContainerView.swift */,
-				4021E49722C9ED680032B236 /* SheetViewController.swift */,
-				4021E49822C9ED680032B236 /* SheetItemActionView.swift */,
+				2D4E1358218688659358A0C6915196F1 /* Contract.swift */,
+				43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */,
+				5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */,
+				9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */,
+				4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */,
+				292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */,
 			);
 			name = SheetViewController;
 			path = SheetViewController/Classes/SheetViewController;
 			sourceTree = "<group>";
 		};
-		4021E49B22C9ED680032B236 /* Views */ = {
+		18ABAE1378DE24BC6F732F8C24F45E6F /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				4021E49C22C9ED680032B236 /* CustomView.swift */,
-				4021E49D22C9ED680032B236 /* ClickableView.swift */,
-			);
-			name = Views;
-			path = SheetViewController/Classes/Views;
-			sourceTree = "<group>";
-		};
-		4021E49E22C9ED680032B236 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4021E49F22C9ED680032B236 /* UIView.swift */,
-				4021E4A022C9ED680032B236 /* UIColor.swift */,
-				4021E4A122C9ED680032B236 /* UILabel.swift */,
-			);
-			name = Extensions;
-			path = SheetViewController/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		4021E4A222C9ED680032B236 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				4021E4A322C9ED680032B236 /* ContainerViewBuilder */,
-				4021E4A922C9ED680032B236 /* SheetContentViewBuilder */,
-				4021E4AB22C9ED680032B236 /* SheetActionViewBuilder */,
-				4021E4AD22C9ED680032B236 /* ViewBuilder.swift */,
+				79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */,
+				5596BA89F81BC64320E457DB3613B86C /* ContainerViewBuilder */,
+				F616CBAEFB2744A72680AB3F8DAA4619 /* SheetActionViewBuilder */,
+				A5A9F2CC8CE8A968CC0DBEAF00251B50 /* SheetContentViewBuilder */,
 			);
 			name = Builder;
 			path = SheetViewController/Classes/Builder;
 			sourceTree = "<group>";
 		};
-		4021E4A322C9ED680032B236 /* ContainerViewBuilder */ = {
+		29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */ = {
 			isa = PBXGroup;
 			children = (
-				4021E4A422C9ED680032B236 /* ContainerConfiguration.swift */,
-				4021E4A522C9ED680032B236 /* ContainerViewNoneActionBuilder.swift */,
-				4021E4A622C9ED680032B236 /* ContainerViewSeparatelyActionBuilder.swift */,
-				4021E4A722C9ED680032B236 /* ContainerViewInnerActionBuilder.swift */,
-				4021E4A822C9ED680032B236 /* ContainerViewBuilder.swift */,
-			);
-			path = ContainerViewBuilder;
-			sourceTree = "<group>";
-		};
-		4021E4A922C9ED680032B236 /* SheetContentViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				4021E4AA22C9ED680032B236 /* SheetContentViewBuilder.swift */,
-			);
-			path = SheetContentViewBuilder;
-			sourceTree = "<group>";
-		};
-		4021E4AB22C9ED680032B236 /* SheetActionViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				4021E4AC22C9ED680032B236 /* SheetActionViewBuilder.swift */,
-			);
-			path = SheetActionViewBuilder;
-			sourceTree = "<group>";
-		};
-		4021E4AE22C9ED680032B236 /* AnimatedTransitioning */ = {
-			isa = PBXGroup;
-			children = (
-				4021E4AF22C9ED680032B236 /* AnimatedPresenting.swift */,
-				4021E4B022C9ED680032B236 /* AnimatedDismissing.swift */,
+				E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */,
+				B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */,
 			);
 			name = AnimatedTransitioning;
 			path = SheetViewController/Classes/AnimatedTransitioning;
 			sourceTree = "<group>";
 		};
-		4021E4B122C9ED680032B236 /* Factory */ = {
+		4E01CE9CA90AAE3B81D5DA20654E63CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4021E4B222C9ED680032B236 /* SheetTypeFactory.swift */,
+				454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */,
+				BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */,
+			);
+			name = Views;
+			path = SheetViewController/Classes/Views;
+			sourceTree = "<group>";
+		};
+		5596BA89F81BC64320E457DB3613B86C /* ContainerViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */,
+				3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */,
+				9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */,
+				D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */,
+				622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */,
+			);
+			name = ContainerViewBuilder;
+			path = ContainerViewBuilder;
+			sourceTree = "<group>";
+		};
+		5E7663D6CDB1523685DAA76AE8ED871D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC936773D6FCCB7AF244AF214A90FBE5 /* Pods_SheetViewController_Example.framework */,
+				2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */,
+				B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB87324048D07D884F673B422A4775E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */,
 			);
 			name = Factory;
 			path = SheetViewController/Classes/Factory;
 			sourceTree = "<group>";
 		};
-		4348800AFC93D459AC5F70F7CF427D1B /* Pods-SheetViewController_Tests */ = {
+		982868EF96761B08DEA62D268B62812C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BB7A415605877402688EF398BAB9CD0E /* Pods-SheetViewController_Tests.modulemap */,
-				3840ED73F5A4FD2AA6FD2247228ED122 /* Pods-SheetViewController_Tests-acknowledgements.markdown */,
-				D907286BBC8499F3FE66369FCC1864FA /* Pods-SheetViewController_Tests-acknowledgements.plist */,
-				D32CDEAA8AFBB8FE10BACD052EDF158F /* Pods-SheetViewController_Tests-dummy.m */,
-				1558AB129C4BF13C203B702F9F3D79B1 /* Pods-SheetViewController_Tests-Info.plist */,
-				5A4FC43C3401E27BD8589652502E7309 /* Pods-SheetViewController_Tests-umbrella.h */,
-				D98D4C1E78FC8223903951A4BBE7344B /* Pods-SheetViewController_Tests.debug.xcconfig */,
-				34AA8863D2063DDFB5DE4045BAB1B35F /* Pods-SheetViewController_Tests.release.xcconfig */,
+				64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */,
+				244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */,
+				4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */,
 			);
-			name = "Pods-SheetViewController_Tests";
-			path = "Target Support Files/Pods-SheetViewController_Tests";
+			name = Extensions;
+			path = SheetViewController/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		52C1B58E2497820F740D8B5EF96577DB /* Products */ = {
+		99FEB6AEC9D81E37BD3C7337B468A833 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FDD2D5E369DF033E72EDA79E8CB7BAEE /* Pods_SheetViewController_Example.framework */,
-				6C5E81EADCEF1BCB0360FA4706A537E3 /* Pods_SheetViewController_Tests.framework */,
-				8F98F7144179E76E4CE4085195CE154A /* SheetViewController.framework */,
+				33F122D791666177D5F3BBABF22E0348 /* LICENSE */,
+				6C953B36839ED0DAA5901EF8A102BEEC /* README.md */,
+				8555C9CD44647899513B02CD19F82554 /* SheetViewController.podspec */,
 			);
-			name = Products;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		84DE2AC20F68528DECB4E98CE4E53A42 /* Support Files */ = {
+		A5A9F2CC8CE8A968CC0DBEAF00251B50 /* SheetContentViewBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				10D732A8A775F4CA7933DFD6DAC169F7 /* SheetViewController.modulemap */,
-				5FDFBB493DC358527D618E828A6A741E /* SheetViewController.xcconfig */,
-				51F9E7D23C1A174ECC40282E2EF82554 /* SheetViewController-dummy.m */,
-				424BC7F8D673E0907B85F1A2C79D2284 /* SheetViewController-Info.plist */,
-				D1E605BE38AF6F0BE7EE5DA880B12B8A /* SheetViewController-prefix.pch */,
-				86DB399A5857D50EDB93214D12B42551 /* SheetViewController-umbrella.h */,
+				61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */,
+			);
+			name = SheetContentViewBuilder;
+			path = SheetContentViewBuilder;
+			sourceTree = "<group>";
+		};
+		BD58F793E015799BDDDD27417B0569C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39155B877CEF27E16C5A156DF58422AA /* SheetViewController.modulemap */,
+				C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */,
+				E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */,
+				4D1A0C6D94DF7A66623BCF1F28FC7159 /* SheetViewController-Info.plist */,
+				2D0EEED901E4345816BDE26E64CB19AC /* SheetViewController-prefix.pch */,
+				8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SheetViewController";
 			sourceTree = "<group>";
 		};
-		8F1DDF46640A9E209865F584ABC57601 /* Pod */ = {
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1FEE9D3390A6AC802EEB205BA10E2EED /* LICENSE */,
-				34DC14F9874E685E1812E56045DFC5EB /* README.md */,
-				EF38551CFF07E1C9E8419B2F00C1BC6B /* SheetViewController.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C34B22DCE808B1E234273C26DBB2A5EA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7A736FA1E620BA0F5500E1659BAF7 /* SheetViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C68D2C9AE23F7DCF0E06603BCA3FF8FB /* Pods-SheetViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9D94F596EED531F875FB28B7DB6DB101 /* Pods-SheetViewController_Example.modulemap */,
+				323C463D944A57B48F5B5764596EFA99 /* Pods-SheetViewController_Example-acknowledgements.markdown */,
+				612E93F0F293E6BC3E7FF46621240EC4 /* Pods-SheetViewController_Example-acknowledgements.plist */,
+				5BB69E0E96B02EDD6124D032AF14A159 /* Pods-SheetViewController_Example-dummy.m */,
+				63DECAE1B141594B09846ED01A868EBF /* Pods-SheetViewController_Example-frameworks.sh */,
+				EF81DC1F09BFFD6F8ED1B5ADA315BA69 /* Pods-SheetViewController_Example-Info.plist */,
+				EB2745F45BB83FBC7340D5926EFBAFAC /* Pods-SheetViewController_Example-umbrella.h */,
+				99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */,
+				151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-SheetViewController_Example";
+			path = "Target Support Files/Pods-SheetViewController_Example";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				EF1C97CC514C9C3404F0352367938975 /* Development Pods */,
+				C34B22DCE808B1E234273C26DBB2A5EA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				52C1B58E2497820F740D8B5EF96577DB /* Products */,
+				5E7663D6CDB1523685DAA76AE8ED871D /* Products */,
 				E5D972AA28ABC698F4A274B32A5BCB47 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -324,122 +310,137 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D428108BC0875E1F667335534BE5CDA1 /* Pods-SheetViewController_Example */ = {
+		E3D7A736FA1E620BA0F5500E1659BAF7 /* SheetViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AC1A64E5DE5003E13D3FB36BE8DF4D1F /* Pods-SheetViewController_Example.modulemap */,
-				1645CD0AA62833B3F79635FE0940EC9F /* Pods-SheetViewController_Example-acknowledgements.markdown */,
-				86C24CA52F8B930A2D79B5429AAA024A /* Pods-SheetViewController_Example-acknowledgements.plist */,
-				2D22D15A1D6A6664161E43D282B08193 /* Pods-SheetViewController_Example-dummy.m */,
-				E3D6077A22EDE678193306BA6AC11756 /* Pods-SheetViewController_Example-frameworks.sh */,
-				A77C2D9B219D2D2166D4A92F462FA47C /* Pods-SheetViewController_Example-Info.plist */,
-				7129CAB4F2496AFD67DAFF24C6F66799 /* Pods-SheetViewController_Example-umbrella.h */,
-				941D0B623D403B2F88D3FCEDC0DBAE19 /* Pods-SheetViewController_Example.debug.xcconfig */,
-				8EF52023559BBA08622282C828B97B34 /* Pods-SheetViewController_Example.release.xcconfig */,
+				29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */,
+				18ABAE1378DE24BC6F732F8C24F45E6F /* Builder */,
+				982868EF96761B08DEA62D268B62812C /* Extensions */,
+				8BB87324048D07D884F673B422A4775E /* Factory */,
+				99FEB6AEC9D81E37BD3C7337B468A833 /* Pod */,
+				048A197DB5DC6B204CA3DFAD5B33B40E /* SheetViewController */,
+				BD58F793E015799BDDDD27417B0569C4 /* Support Files */,
+				4E01CE9CA90AAE3B81D5DA20654E63CF /* Views */,
 			);
-			name = "Pods-SheetViewController_Example";
-			path = "Target Support Files/Pods-SheetViewController_Example";
+			name = SheetViewController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		E5D972AA28ABC698F4A274B32A5BCB47 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D428108BC0875E1F667335534BE5CDA1 /* Pods-SheetViewController_Example */,
-				4348800AFC93D459AC5F70F7CF427D1B /* Pods-SheetViewController_Tests */,
+				C68D2C9AE23F7DCF0E06603BCA3FF8FB /* Pods-SheetViewController_Example */,
+				F49E8436590DF2223F0F94D46511AEFE /* Pods-SheetViewController_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EF1C97CC514C9C3404F0352367938975 /* Development Pods */ = {
+		F49E8436590DF2223F0F94D46511AEFE /* Pods-SheetViewController_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0662BCF62125314441EE3AB000353DD0 /* SheetViewController */,
+				5D2E8CC9F57931E29DFB70671FFD116A /* Pods-SheetViewController_Tests.modulemap */,
+				C0BEAF4A6C3A78DC34A3A060C229DEFC /* Pods-SheetViewController_Tests-acknowledgements.markdown */,
+				544FF656F980B35E10AF050165E6AD3E /* Pods-SheetViewController_Tests-acknowledgements.plist */,
+				F40ACF248D79A81F42461134D11E51A3 /* Pods-SheetViewController_Tests-dummy.m */,
+				535D6871DDC191107BBF2F90ACE33E4E /* Pods-SheetViewController_Tests-Info.plist */,
+				C8AA0F24E7C0F545D13459AF42FD3FC2 /* Pods-SheetViewController_Tests-umbrella.h */,
+				4A5EA107B150D0400E618A2D708E92FF /* Pods-SheetViewController_Tests.debug.xcconfig */,
+				D40F6BCEFA437265E2E091D04D50FEB6 /* Pods-SheetViewController_Tests.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-SheetViewController_Tests";
+			path = "Target Support Files/Pods-SheetViewController_Tests";
+			sourceTree = "<group>";
+		};
+		F616CBAEFB2744A72680AB3F8DAA4619 /* SheetActionViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */,
+			);
+			name = SheetActionViewBuilder;
+			path = SheetActionViewBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		62C1831383A215A1DC58859FAC4632E1 /* Headers */ = {
+		504506CC7C95BE57F0D4883BA0832542 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAB8D6B6257D8FEA81AF60CFCF1771B /* Pods-SheetViewController_Example-umbrella.h in Headers */,
+				AD09F3721B65F8409D46934065D708F8 /* SheetViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9396C6BA71CEFF7BE4251568F9E28D1C /* Headers */ = {
+		5A92DC50CB3FF3296C99B484E622E4CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1250DBF7502BBCF73220EDC08072130F /* Pods-SheetViewController_Tests-umbrella.h in Headers */,
+				C711456357998FCC75219A85B29A31BA /* Pods-SheetViewController_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFBDA121D753711684B4EA86094A2EAC /* Headers */ = {
+		6A0D1D6558B8A24B54205561571BC044 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA64889CB7FEFCFAF40AA2FB4BE45F23 /* SheetViewController-umbrella.h in Headers */,
-				4021E4E422C9FE020032B236 /* Contract.swift in Headers */,
+				92A00EA45A91BCF0393FCC75C290F0E1 /* Pods-SheetViewController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4CE7E938889AE7E719168B36C77A592E /* Pods-SheetViewController_Example */ = {
+		8DE8331C8266E05232924CEDE47C6B99 /* Pods-SheetViewController_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E07F9F4D18BF05A82A8AC11C3921A22 /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Example" */;
+			buildConfigurationList = D04EC37AE5D06437987DF565061AD4FE /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Tests" */;
 			buildPhases = (
-				62C1831383A215A1DC58859FAC4632E1 /* Headers */,
-				B4E70B3E44B88177F4D3C3A4AA1B8959 /* Sources */,
-				D7FAA9039152F7AEACAAC2A174E42FD2 /* Frameworks */,
-				F667A0BA8EB6BF942F942C7D110E825C /* Resources */,
+				5A92DC50CB3FF3296C99B484E622E4CA /* Headers */,
+				034716EC455803A5EB269B96E25D14E2 /* Sources */,
+				D75810352BB50CE24F5E18AB2539FD64 /* Frameworks */,
+				D9B696FE266F6798E89FF8F4D6A07E36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C62228AC37CD3FDCE66940648FC0D05 /* PBXTargetDependency */,
-			);
-			name = "Pods-SheetViewController_Example";
-			productName = "Pods-SheetViewController_Example";
-			productReference = FDD2D5E369DF033E72EDA79E8CB7BAEE /* Pods_SheetViewController_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4C8EDC694C0C4AD6837AF13DDEA19B8 /* Pods-SheetViewController_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 02B0AEB3B271E98AC9FA6D8596E4E09F /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Tests" */;
-			buildPhases = (
-				9396C6BA71CEFF7BE4251568F9E28D1C /* Headers */,
-				427DE5012DDE67C3931C333D35E65530 /* Sources */,
-				024BF6E0F1BDCCC0C6A1CC6A920A1BAE /* Frameworks */,
-				AD2CFEE2217BBCC9A9F2A6963ACF473A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				85BC4D23CB851E530158484B48077859 /* PBXTargetDependency */,
+				6E2DBBB1164C1E3C0B12A32DF1446A7F /* PBXTargetDependency */,
 			);
 			name = "Pods-SheetViewController_Tests";
 			productName = "Pods-SheetViewController_Tests";
-			productReference = 6C5E81EADCEF1BCB0360FA4706A537E3 /* Pods_SheetViewController_Tests.framework */;
+			productReference = 2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B1D81E6B277541327B52343B705D5217 /* SheetViewController */ = {
+		C88D6DBD61C25DD9B19EF057CDAB2D25 /* Pods-SheetViewController_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D36DF92C53028926C442BE4347D1E76 /* Build configuration list for PBXNativeTarget "SheetViewController" */;
+			buildConfigurationList = 62A57B3D48CE5AA085691E4059DD451F /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Example" */;
 			buildPhases = (
-				FFBDA121D753711684B4EA86094A2EAC /* Headers */,
-				9BE126D9B14C76B024CF15F1B44C129F /* Sources */,
-				C15381D5843ECD2B387D727A7DDF5D8A /* Frameworks */,
-				DC8AE22CF369EDF36B49B97D37700D33 /* Resources */,
+				6A0D1D6558B8A24B54205561571BC044 /* Headers */,
+				44A700D60B4DD660C79F9D1A39AAA621 /* Sources */,
+				89BB2D2E8A2D7C0716B06EB5AA796639 /* Frameworks */,
+				75112A5C8A4712659AEEBF8300BCA6C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76B5635FD962300C5680B4F59C996FD /* PBXTargetDependency */,
+			);
+			name = "Pods-SheetViewController_Example";
+			productName = "Pods-SheetViewController_Example";
+			productReference = BC936773D6FCCB7AF244AF214A90FBE5 /* Pods_SheetViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBD5BEC8D8A2A6C424A8E77A45CAE027 /* SheetViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C08EA1757B949CCCB1B6B3C21BC46D /* Build configuration list for PBXNativeTarget "SheetViewController" */;
+			buildPhases = (
+				504506CC7C95BE57F0D4883BA0832542 /* Headers */,
+				5F479878FCD68D3D57F47A4E2C684D60 /* Sources */,
+				4FFB7F3A4CBD526E1324414D56574E27 /* Frameworks */,
+				8EEE5528EB5089EFDBD987BAD479D089 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -447,7 +448,7 @@
 			);
 			name = SheetViewController;
 			productName = SheetViewController;
-			productReference = 8F98F7144179E76E4CE4085195CE154A /* SheetViewController.framework */;
+			productReference = B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -456,8 +457,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -465,36 +466,35 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 52C1B58E2497820F740D8B5EF96577DB /* Products */;
+			productRefGroup = 5E7663D6CDB1523685DAA76AE8ED871D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CE7E938889AE7E719168B36C77A592E /* Pods-SheetViewController_Example */,
-				A4C8EDC694C0C4AD6837AF13DDEA19B8 /* Pods-SheetViewController_Tests */,
-				B1D81E6B277541327B52343B705D5217 /* SheetViewController */,
+				C88D6DBD61C25DD9B19EF057CDAB2D25 /* Pods-SheetViewController_Example */,
+				8DE8331C8266E05232924CEDE47C6B99 /* Pods-SheetViewController_Tests */,
+				FBD5BEC8D8A2A6C424A8E77A45CAE027 /* SheetViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD2CFEE2217BBCC9A9F2A6963ACF473A /* Resources */ = {
+		75112A5C8A4712659AEEBF8300BCA6C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8AE22CF369EDF36B49B97D37700D33 /* Resources */ = {
+		8EEE5528EB5089EFDBD987BAD479D089 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F667A0BA8EB6BF942F942C7D110E825C /* Resources */ = {
+		D9B696FE266F6798E89FF8F4D6A07E36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,75 +504,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		427DE5012DDE67C3931C333D35E65530 /* Sources */ = {
+		034716EC455803A5EB269B96E25D14E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6E6CE4FAED7AB4A664B30960DB1229 /* Pods-SheetViewController_Tests-dummy.m in Sources */,
+				021A3649CA74E872F7ECD888173AD866 /* Pods-SheetViewController_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BE126D9B14C76B024CF15F1B44C129F /* Sources */ = {
+		44A700D60B4DD660C79F9D1A39AAA621 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4021E4CC22C9F3E60032B236 /* AnimatedPresenting.swift in Sources */,
-				4021E4CD22C9F3E60032B236 /* AnimatedDismissing.swift in Sources */,
-				4021E4CE22C9F3E60032B236 /* ContainerConfiguration.swift in Sources */,
-				4021E4CF22C9F3E60032B236 /* ContainerViewNoneActionBuilder.swift in Sources */,
-				4021E4D022C9F3E60032B236 /* ContainerViewSeparatelyActionBuilder.swift in Sources */,
-				4021E4D122C9F3E60032B236 /* ContainerViewInnerActionBuilder.swift in Sources */,
-				4021E4D222C9F3E60032B236 /* ContainerViewBuilder.swift in Sources */,
-				4021E4D322C9F3E60032B236 /* SheetContentViewBuilder.swift in Sources */,
-				4021E4D422C9F3E60032B236 /* SheetActionViewBuilder.swift in Sources */,
-				4021E4D522C9F3E60032B236 /* ViewBuilder.swift in Sources */,
-				4021E4D622C9F3E60032B236 /* UIView.swift in Sources */,
-				4021E4D722C9F3E60032B236 /* UIColor.swift in Sources */,
-				4021E4D822C9F3E60032B236 /* UILabel.swift in Sources */,
-				4021E4D922C9F3E60032B236 /* SheetTypeFactory.swift in Sources */,
-				4021E4DA22C9F3E60032B236 /* SheetActionView.swift in Sources */,
-				4021E4DB22C9F3E60032B236 /* SheetContentView.swift in Sources */,
-				4021E4DC22C9F3E60032B236 /* Contract.swift in Sources */,
-				4021E4DD22C9F3E60032B236 /* SheetContainerView.swift in Sources */,
-				4021E4DE22C9F3E60032B236 /* SheetViewController.swift in Sources */,
-				4021E4DF22C9F3E60032B236 /* SheetItemActionView.swift in Sources */,
-				4021E4E022C9F3E60032B236 /* CustomView.swift in Sources */,
-				4021E4E122C9F3E60032B236 /* ClickableView.swift in Sources */,
-				81F64F20FDFE48919E15D22448A3AE3A /* SheetViewController-dummy.m in Sources */,
+				911DC464BD5BA65D9D1B1E954D854DC6 /* Pods-SheetViewController_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4E70B3E44B88177F4D3C3A4AA1B8959 /* Sources */ = {
+		5F479878FCD68D3D57F47A4E2C684D60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4DE16EE9CA48E5C31DA1D4812ADB263 /* Pods-SheetViewController_Example-dummy.m in Sources */,
+				9A26372687BB7285D3EF32793CBA171A /* AnimatedDismissing.swift in Sources */,
+				D2C8DDFA87F5CD8F04FADEE1B449C2F7 /* AnimatedPresenting.swift in Sources */,
+				4DCDE907CADAAD0531D0B12761C762E9 /* ClickableView.swift in Sources */,
+				2894FA25CCD84B8EE3E77A14FF8722E8 /* ContainerConfiguration.swift in Sources */,
+				78E39979D10064DB9C2DE03F89902EDE /* ContainerViewBuilder.swift in Sources */,
+				35C0B56CFDD9C86540F0B7B349A248AB /* ContainerViewInnerActionBuilder.swift in Sources */,
+				CD585DC49FE0CF6B94289F2993732F41 /* ContainerViewNoneActionBuilder.swift in Sources */,
+				70F47958A540AE8529DF838D7F2B3E9D /* ContainerViewSeparatelyActionBuilder.swift in Sources */,
+				5077337566D536992A35F0D07E96DDA9 /* Contract.swift in Sources */,
+				667B00AAF126DB4E26782EE69E2C6CCA /* CustomView.swift in Sources */,
+				6F5FF09C77186DDD5EA061BDA1DAE43A /* SheetActionView.swift in Sources */,
+				6A06B38CF4FFD94DBD0557B5DACAC438 /* SheetActionViewBuilder.swift in Sources */,
+				400E17585C3DEFAC8CFD537E291507B1 /* SheetContainerView.swift in Sources */,
+				852BE0570A512BBA3DD9E11F87C7D72E /* SheetContentView.swift in Sources */,
+				147EA9AEC84C6C7FFDB0A8E0F186139F /* SheetContentViewBuilder.swift in Sources */,
+				F47871237B852E12C02656E83C3BD375 /* SheetItemActionView.swift in Sources */,
+				605C4BEEED62C1C135EDBBF39B5ED829 /* SheetTypeFactory.swift in Sources */,
+				3A12C854C6A0090F2F4AFB43532B73C2 /* SheetViewController-dummy.m in Sources */,
+				6098811BCDC3E31A0AFC3BE56D991EE1 /* SheetViewController.swift in Sources */,
+				33784922B6205AB97E38058E28CFEACA /* UIColor.swift in Sources */,
+				871BAC3DD323B398F13F6484C5E47FFA /* UILabel.swift in Sources */,
+				0B39F70551BFF82392C72709CCAC2FAC /* UIView.swift in Sources */,
+				97CF024AC3261AB543C7379E35751ACE /* ViewBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C62228AC37CD3FDCE66940648FC0D05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SheetViewController;
-			target = B1D81E6B277541327B52343B705D5217 /* SheetViewController */;
-			targetProxy = 38DEBFB29E575FE38421340744CEE86F /* PBXContainerItemProxy */;
-		};
-		85BC4D23CB851E530158484B48077859 /* PBXTargetDependency */ = {
+		6E2DBBB1164C1E3C0B12A32DF1446A7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SheetViewController_Example";
-			target = 4CE7E938889AE7E719168B36C77A592E /* Pods-SheetViewController_Example */;
-			targetProxy = AF9D20CE8B53B9CB354C3FF8CCCAA1B4 /* PBXContainerItemProxy */;
+			target = C88D6DBD61C25DD9B19EF057CDAB2D25 /* Pods-SheetViewController_Example */;
+			targetProxy = 03C52EA53279D2FC32ED3119FFCDB6E8 /* PBXContainerItemProxy */;
+		};
+		A76B5635FD962300C5680B4F59C996FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SheetViewController;
+			target = FBD5BEC8D8A2A6C424A8E77A45CAE027 /* SheetViewController */;
+			targetProxy = 9832D5218275CDCB74595B9329824A68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25C2D622DEF659BC38C703ECB785F279 /* Release */ = {
+		0B135E3B0612C0551D5BE3A4D7E1C69A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF52023559BBA08622282C828B97B34 /* Pods-SheetViewController_Example.release.xcconfig */;
+			baseConfigurationReference = 99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -595,6 +596,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13027EF964388F74BDACF78F8CF058AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
+				PRODUCT_MODULE_NAME = SheetViewController;
+				PRODUCT_NAME = SheetViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -603,79 +635,10 @@
 			};
 			name = Release;
 		};
-		32178270DDA06B51E9B32EF96A9F3217 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D98D4C1E78FC8223903951A4BBE7344B /* Pods-SheetViewController_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SheetViewController_Tests/Pods-SheetViewController_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SheetViewController_Tests/Pods-SheetViewController_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		656301B35CB7790B441C646E1955D9B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 941D0B623D403B2F88D3FCEDC0DBAE19 /* Pods-SheetViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SheetViewController_Example/Pods-SheetViewController_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SheetViewController_Example/Pods-SheetViewController_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -731,16 +694,17 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BF83606D85C802EAF6E5BB4F2BC93E23 /* Release */ = {
+		99C6054EDA15B56F8E47F1F67620E924 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34AA8863D2063DDFB5DE4045BAB1B35F /* Pods-SheetViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = D40F6BCEFA437265E2E091D04D50FEB6 /* Pods-SheetViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -763,7 +727,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -771,74 +734,10 @@
 			};
 			name = Release;
 		};
-		C104CFC3C06FC301B3B9A878BCD684F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDFBB493DC358527D618E828A6A741E /* SheetViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
-				PRODUCT_MODULE_NAME = SheetViewController;
-				PRODUCT_NAME = SheetViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C1D900409E30D3245534A691969DEB24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FDFBB493DC358527D618E828A6A741E /* SheetViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
-				PRODUCT_MODULE_NAME = SheetViewController;
-				PRODUCT_NAME = SheetViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -888,29 +787,122 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F05AF54804A9605CD2A983AE9238C22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
+				PRODUCT_MODULE_NAME = SheetViewController;
+				PRODUCT_NAME = SheetViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0EED5A1553A3470DA740D8B2DE149E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5EA107B150D0400E618A2D708E92FF /* Pods-SheetViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SheetViewController_Tests/Pods-SheetViewController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SheetViewController_Tests/Pods-SheetViewController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F78551D8254BD063EC0DD63787DE65E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SheetViewController_Example/Pods-SheetViewController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SheetViewController_Example/Pods-SheetViewController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02B0AEB3B271E98AC9FA6D8596E4E09F /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Tests" */ = {
+		28C08EA1757B949CCCB1B6B3C21BC46D /* Build configuration list for PBXNativeTarget "SheetViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32178270DDA06B51E9B32EF96A9F3217 /* Debug */,
-				BF83606D85C802EAF6E5BB4F2BC93E23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2E07F9F4D18BF05A82A8AC11C3921A22 /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				656301B35CB7790B441C646E1955D9B4 /* Debug */,
-				25C2D622DEF659BC38C703ECB785F279 /* Release */,
+				F05AF54804A9605CD2A983AE9238C22C /* Debug */,
+				13027EF964388F74BDACF78F8CF058AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -918,17 +910,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
-				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D36DF92C53028926C442BE4347D1E76 /* Build configuration list for PBXNativeTarget "SheetViewController" */ = {
+		62A57B3D48CE5AA085691E4059DD451F /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C104CFC3C06FC301B3B9A878BCD684F2 /* Debug */,
-				C1D900409E30D3245534A691969DEB24 /* Release */,
+				0B135E3B0612C0551D5BE3A4D7E1C69A /* Debug */,
+				F78551D8254BD063EC0DD63787DE65E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04EC37AE5D06437987DF565061AD4FE /* Build configuration list for PBXNativeTarget "Pods-SheetViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EED5A1553A3470DA740D8B2DE149E8 /* Debug */,
+				99C6054EDA15B56F8E47F1F67620E924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

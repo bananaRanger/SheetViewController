@@ -53,6 +53,7 @@ extension AnimatedPresenting: UIViewControllerAnimatedTransitioning {
       else { return }
     
     containerView.addSubview(toView)
+    toView.addAllSidesAnchors(to: containerView)
     containerView.bringSubviewToFront(fromView)
     
     UIView.animate(
@@ -63,10 +64,11 @@ extension AnimatedPresenting: UIViewControllerAnimatedTransitioning {
         toView.backgroundColor = UIColor.black.withAlphaComponent(self?.alpha ?? 0)
     })
     
-    let initialAlertFrame = alertView.frame
-    
+    let initialAlertFrame = alertView.bounds
+
+    alertView.frame.origin.x = 0
     alertView.frame.origin.y = fromView.bounds.height
-    
+
     UIView.dampingAnimate(
       duration: duration,
       animations: {
