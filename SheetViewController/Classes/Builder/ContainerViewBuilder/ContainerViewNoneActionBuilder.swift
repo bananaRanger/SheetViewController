@@ -34,8 +34,122 @@ struct NoneContainerConfiguration: ContainerConfiguration {
   var actionCornerRadius: CGFloat = 12
 }
 
-//MARK: - ContainerViewNoneActionBuilder struct
+//MARK: - ContainerViewNoneActionBuilder class
 class ContainerViewNoneActionBuilder: ContainerViewBuilder {
+  
+  //MARK: - Properties
+  private let configuration: ContainerConfiguration
+  
+  var parent: UIView
+  
+  var headerTitle: String?
+  var headerMessage: String?
+  var actionTitle: String?
+  var isSeparately: Bool?
+  
+  var alignmentType: SheetAlignmentType = .bottom
+  
+  //MARK: - Inits
+  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+    self.parent = parent
+    self.configuration = configuration
+  }
+  
+  //MARK: - Methods
+  @discardableResult
+  func create() -> ContainerView {
+    switch alignmentType {
+    case .center:
+      let builder = ContainerCenterViewNoneActionBuilder(
+        parent: parent,
+        configuration: configuration)
+      builder.headerTitle = headerTitle
+      builder.headerMessage = headerMessage
+      builder.actionTitle = actionTitle
+      builder.isSeparately = isSeparately
+      return builder.create()
+    case .bottom:
+      let builder = ContainerBottomViewNoneActionBuilder(
+        parent: parent,
+        configuration: configuration)
+      builder.headerTitle = headerTitle
+      builder.headerMessage = headerMessage
+      builder.actionTitle = actionTitle
+      builder.isSeparately = isSeparately
+      return builder.create()
+    }
+  }
+}
+
+//MARK: - ContainerCenterViewNoneActionBuilder class
+class ContainerCenterViewNoneActionBuilder: ContainerViewBuilder {
+  
+  //MARK: - Properties
+  private let configuration: ContainerConfiguration
+  
+  var parent: UIView
+  
+  var headerTitle: String?
+  var headerMessage: String?
+  var actionTitle: String?
+  var isSeparately: Bool?
+  
+  //MARK: - Inits
+  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+    self.parent = parent
+    self.configuration = configuration
+  }
+  
+  //MARK: - Methods
+  @discardableResult
+  func create() -> ContainerView {
+    let container = SheetContainerView(frame: .zero)
+    parent.addSubview(container)
+    container.backgroundColor = configuration.backgroundColor
+    container.layer.cornerRadius = configuration.containerCornerRadius
+    container.layer.masksToBounds = true
+    container.translatesAutoresizingMaskIntoConstraints = false
+    
+    container.rightAnchor.constraint(
+      equalTo: parent.rightAnchor,
+      constant: -configuration.outerSpacing.width
+      ).isActive = true
+    
+    container.leftAnchor.constraint(
+      equalTo: parent.leftAnchor,
+      constant: configuration.outerSpacing.width
+      ).isActive = true
+    
+    container.topAnchor.constraint(
+      greaterThanOrEqualTo: parent.topAnchor,
+      constant: configuration.outerSpacing.height * configuration.outerMultiplier
+      ).isActive = true
+    
+    container.centerXAnchor.constraint(
+      equalTo: parent.centerXAnchor
+      ).isActive = true
+    
+    container.centerYAnchor.constraint(
+      equalTo: parent.centerYAnchor
+      ).isActive = true
+    
+    let contentViewBuilder = SheetContentViewBuilder(parent: container,
+                                                     configuration: configuration)
+    contentViewBuilder.headerTitle = headerTitle
+    contentViewBuilder.headerMessage = headerMessage
+    contentViewBuilder.isSeparately = isSeparately
+    let content = contentViewBuilder.create()
+    
+    container.action = nil
+    container.content = content
+    
+    return container
+  }
+  
+}
+
+//MARK: - ContainerBottomViewNoneActionBuilder class
+class ContainerBottomViewNoneActionBuilder: ContainerViewBuilder {
   
   //MARK: - Properties
   private let configuration: ContainerConfiguration

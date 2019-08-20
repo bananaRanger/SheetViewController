@@ -24,6 +24,12 @@ import UIKit.UIView
 
 public typealias ActionButtonTouchUpInsideHandler = (() -> Void)
 
+//MARK: SheetAlignmentType enum
+public enum SheetAlignmentType: Int {
+  case bottom
+  case center
+}
+
 //MARK: - SheetActionType enum
 public enum SheetActionType: Int {
   case separately
@@ -65,6 +71,7 @@ public protocol SheetController: UIViewController {
   
   static func alert(with title: String?,
                     message: String?,
+                    alignmentType: SheetAlignmentType,
                     actionType: SheetActionType,
                     isSeparately: Bool?) -> SheetController
   

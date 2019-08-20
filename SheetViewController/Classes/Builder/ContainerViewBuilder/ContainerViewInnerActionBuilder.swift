@@ -49,6 +49,126 @@ class ContainerViewInnerActionBuilder: ContainerViewBuilder {
   var actionTitle: String?
   var isSeparately: Bool?
   
+  var alignmentType: SheetAlignmentType = .bottom
+  
+  //MARK: - Inits
+  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+    self.parent = parent
+    self.configuration = configuration
+  }
+  
+  //MARK: - Methods
+  @discardableResult
+  func create() -> ContainerView {
+    switch alignmentType {
+    case .center:
+      let builder = ContainerCenterViewInnerActionBuilder(
+        parent: parent,
+        configuration: configuration)
+      builder.headerTitle = headerTitle
+      builder.headerMessage = headerMessage
+      builder.actionTitle = actionTitle
+      builder.isSeparately = isSeparately
+      return builder.create()
+    case .bottom:
+      let builder = ContainerBottomViewInnerActionBuilder(
+        parent: parent,
+        configuration: configuration)
+      builder.headerTitle = headerTitle
+      builder.headerMessage = headerMessage
+      builder.actionTitle = actionTitle
+      builder.isSeparately = isSeparately
+      return builder.create()
+    }
+  }
+}
+
+//MARK: - ContainerCenterViewInnerActionBuilder class
+class ContainerCenterViewInnerActionBuilder: ContainerViewBuilder {
+  
+  //MARK: - Properties
+  private let configuration: ContainerConfiguration
+  
+  var parent: UIView
+  
+  var headerTitle: String?
+  var headerMessage: String?
+  var actionTitle: String?
+  var isSeparately: Bool?
+  
+  //MARK: - Inits
+  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+    self.parent = parent
+    self.configuration = configuration
+  }
+  
+  //MARK: - Methods
+  @discardableResult
+  func create() -> ContainerView {
+    let container = SheetContainerView(frame: .zero)
+    parent.addSubview(container)
+    container.backgroundColor = configuration.backgroundColor
+    container.layer.cornerRadius = configuration.containerCornerRadius
+    container.layer.masksToBounds = true
+    container.translatesAutoresizingMaskIntoConstraints = false
+    
+    container.rightAnchor.constraint(
+      equalTo: parent.rightAnchor,
+      constant: -configuration.outerSpacing.width
+      ).isActive = true
+        
+    container.leftAnchor.constraint(
+      equalTo: parent.leftAnchor,
+      constant: configuration.outerSpacing.width
+      ).isActive = true
+    
+    container.topAnchor.constraint(
+      greaterThanOrEqualTo: parent.topAnchor,
+      constant: configuration.outerSpacing.height * configuration.outerMultiplier
+      ).isActive = true
+    
+    container.centerXAnchor.constraint(
+      equalTo: parent.centerXAnchor
+      ).isActive = true
+    
+    container.centerYAnchor.constraint(
+      equalTo: parent.centerYAnchor
+      ).isActive = true
+    
+    let actionViewBuilder = SheetActionViewBuilder(parent: container,
+                                                   configuration: configuration)
+    actionViewBuilder.actionTitle = actionTitle
+    let action = actionViewBuilder.create()
+    
+    let contentViewBuilder = SheetContentViewBuilder(parent: container,
+                                                     configuration: configuration)
+    contentViewBuilder.headerTitle = headerTitle
+    contentViewBuilder.headerMessage = headerMessage
+    contentViewBuilder.action = action
+    contentViewBuilder.isSeparately = isSeparately
+    let content = contentViewBuilder.create()
+    
+    container.action = action
+    container.content = content
+    
+    return container
+  }
+  
+}
+
+//MARK: - ContainerBottomViewInnerActionBuilder class
+class ContainerBottomViewInnerActionBuilder: ContainerViewBuilder {
+  
+  //MARK: - Properties
+  private let configuration: ContainerConfiguration
+  
+  var parent: UIView
+  
+  var headerTitle: String?
+  var headerMessage: String?
+  var actionTitle: String?
+  var isSeparately: Bool?
+  
   //MARK: - Inits
   internal required init(parent: UIView, configuration: ContainerConfiguration) {
     self.parent = parent

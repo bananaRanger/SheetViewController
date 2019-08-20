@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SheetViewController'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'SheetViewController - is a customizable native-like sheet alert controller'
 
   s.description      = <<-DESC

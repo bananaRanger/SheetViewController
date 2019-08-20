@@ -23,6 +23,7 @@
 import UIKit
 
 public class SheetViewController: UIViewController, SheetController {
+  private var _alignmentType = SheetAlignmentType.bottom
   private var _actionType = SheetActionType.separately
   private let _animatedPresenting = AnimatedPresenting()
   private let _animatedDismissing = AnimatedDismissing()
@@ -45,6 +46,7 @@ public class SheetViewController: UIViewController, SheetController {
   
   public static func alert(with title: String?,
                            message: String?,
+                           alignmentType: SheetAlignmentType = .bottom,
                            actionType: SheetActionType = .separately,
                            isSeparately: Bool? = true) -> SheetController {
     let alert = SheetViewController()
@@ -52,7 +54,8 @@ public class SheetViewController: UIViewController, SheetController {
     factory.headerTitle = title
     factory.headerMessage = message
     factory.isSeparately = isSeparately
-    alert.containerView = factory.containerView(by: actionType)
+    alert.containerView = factory.containerView(with: alignmentType, and: actionType)
+    alert._alignmentType = alignmentType
     alert._actionType = actionType
     alert.modalPresentationStyle = .overCurrentContext
     alert.view.backgroundColor = .clear
@@ -148,6 +151,8 @@ fileprivate extension SheetViewController {
 //MARK: - Working with orientation
 extension SheetViewController {
   override public func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousTraitCollection)
+    
     let hSizeClass = traitCollection.horizontalSizeClass
     let vSizeClass = traitCollection.verticalSizeClass
     let isPortrait = hSizeClass == .compact && vSizeClass == .regular
@@ -173,7 +178,10 @@ extension SheetViewController {
     updateViewConstraints()
   }
   
-  override public func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+  override public func viewWillTransition(
+    to size: CGSize,
+    with coordinator: UIViewControllerTransitionCoordinator) {
+    
     super.viewWillTransition(to: size, with: coordinator)
     coordinator.animate(alongsideTransition: nil) { [weak self] context in
       self?.resetContainerViewCenter()
@@ -183,13 +191,15 @@ extension SheetViewController {
 
 //MARK: - UIViewControllerTransitioningDelegate extension
 extension SheetViewController: UIViewControllerTransitioningDelegate {
-  public func animationController(forPresented presented: UIViewController,
-                           presenting: UIViewController,
-                           source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+  public func animationController(
+    forPresented presented: UIViewController,
+    presenting: UIViewController,
+    source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return _animatedPresenting
   }
   
-  public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+  public func animationController(
+    forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return _animatedDismissing
   }
 }

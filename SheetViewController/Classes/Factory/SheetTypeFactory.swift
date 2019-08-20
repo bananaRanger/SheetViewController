@@ -49,7 +49,8 @@ class ContainerViewFactory {
     }
   }
   
-  func containerView(by actionType: SheetActionType) -> ContainerView {
+  func containerView(with alignmentType: SheetAlignmentType,
+                     and actionType: SheetActionType) -> ContainerView {
     switch actionType {
     case .separately:
       let container = ContainerViewSeparatelyActionBuilder(
@@ -60,6 +61,8 @@ class ContainerViewFactory {
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
       container.isSeparately = isSeparately
+      container.alignmentType = alignmentType
+
       return container.create()
     case .inner:
       let container = ContainerViewInnerActionBuilder(
@@ -70,6 +73,8 @@ class ContainerViewFactory {
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
       container.isSeparately = isSeparately
+      container.alignmentType = alignmentType
+
       return container.create()
     case .none:
       let container = ContainerViewNoneActionBuilder(
@@ -80,6 +85,8 @@ class ContainerViewFactory {
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
       container.isSeparately = isSeparately
+      container.alignmentType = alignmentType
+      
       return container.create()
     }
   }
