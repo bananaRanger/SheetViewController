@@ -22,9 +22,11 @@
 
 import UIKit
 
-//MARK: - SeparatelyContainerConfiguration struct
-struct SeparatelyContainerConfiguration: ContainerConfiguration {
-  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+//MARK: - Container Configuration Builder
+
+//MARK: - SeparatelyCenterContainerConfiguration struct
+struct SeparatelyCenterContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 18, height: 24)
   
   var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
   var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
@@ -33,6 +35,30 @@ struct SeparatelyContainerConfiguration: ContainerConfiguration {
   var contentCornerRadius: CGFloat = 12
   var actionCornerRadius: CGFloat = 12
 }
+
+//MARK: - SeparatelyBottomContainerConfiguration struct
+struct SeparatelyBottomContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+  
+  var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
+  var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
+  var innerActionSpacing: CGSize = CGSize(width: 0, height: 8)
+  
+  var contentCornerRadius: CGFloat = 12
+  var actionCornerRadius: CGFloat = 12
+}
+
+//MARK: - SeparatelyContainerConfigurationBuilder
+class SeparatelyContainerConfigurationBuilder: ContainerConfigurationBuilder {
+  static func create(with type: SheetAlignmentType) -> ContainerConfiguration {
+    switch type {
+    case .center: return SeparatelyCenterContainerConfiguration()
+    case .bottom: return SeparatelyBottomContainerConfiguration()
+    }
+  }
+}
+
+//MARK: - View Configuration Builder 
 
 //MARK: - ContainerViewSeparatelyActionBuilder class
 class ContainerViewSeparatelyActionBuilder: ContainerViewBuilder {

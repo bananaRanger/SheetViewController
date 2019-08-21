@@ -7,37 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013EE98C93051E2798D45BAC37974A98 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */; };
 		021A3649CA74E872F7ECD888173AD866 /* Pods-SheetViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F40ACF248D79A81F42461134D11E51A3 /* Pods-SheetViewController_Tests-dummy.m */; };
-		0B39F70551BFF82392C72709CCAC2FAC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */; };
-		147EA9AEC84C6C7FFDB0A8E0F186139F /* SheetContentViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */; };
-		2894FA25CCD84B8EE3E77A14FF8722E8 /* ContainerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */; };
-		33784922B6205AB97E38058E28CFEACA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */; };
-		35C0B56CFDD9C86540F0B7B349A248AB /* ContainerViewInnerActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */; };
-		3A12C854C6A0090F2F4AFB43532B73C2 /* SheetViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */; };
-		400E17585C3DEFAC8CFD537E291507B1 /* SheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */; };
-		4DCDE907CADAAD0531D0B12761C762E9 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */; };
-		5077337566D536992A35F0D07E96DDA9 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E1358218688659358A0C6915196F1 /* Contract.swift */; };
-		605C4BEEED62C1C135EDBBF39B5ED829 /* SheetTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */; };
-		6098811BCDC3E31A0AFC3BE56D991EE1 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */; };
-		667B00AAF126DB4E26782EE69E2C6CCA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */; };
-		6A06B38CF4FFD94DBD0557B5DACAC438 /* SheetActionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */; };
-		6F5FF09C77186DDD5EA061BDA1DAE43A /* SheetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */; };
-		70F47958A540AE8529DF838D7F2B3E9D /* ContainerViewSeparatelyActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */; };
-		78E39979D10064DB9C2DE03F89902EDE /* ContainerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */; };
-		852BE0570A512BBA3DD9E11F87C7D72E /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */; };
-		871BAC3DD323B398F13F6484C5E47FFA /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */; };
+		05263B991943F96156049C5E3CDF8EAB /* SheetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */; };
+		05E4A5B2CB8D3E67687308F76B83E4A6 /* SheetViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AEF19DA88F9469EE1B6C6397FBF401E /* ContainerConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA10FF7AEB1B46B9CCCF341B85D2AC9 /* ContainerConfigurationBuilder.swift */; };
+		2984E276217B8B2C01C63AA54F2B53CF /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */; };
+		3142F146BC4967A48B46141DF2290C26 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */; };
+		39436D8B7FF83194D5E9D6670B5E64FA /* SheetViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */; };
+		398E6A431215DEF260E4F01121B07C17 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */; };
+		72590AC2A0FF7CB4195D79AB72A6E117 /* SheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */; };
+		76593E19D7D2DF29C47404D1E8F17F55 /* SheetContentViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */; };
+		8E3C29B258BC05AFFE75BE59EF05BAF4 /* SheetItemActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */; };
 		911DC464BD5BA65D9D1B1E954D854DC6 /* Pods-SheetViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB69E0E96B02EDD6124D032AF14A159 /* Pods-SheetViewController_Example-dummy.m */; };
 		92A00EA45A91BCF0393FCC75C290F0E1 /* Pods-SheetViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2745F45BB83FBC7340D5926EFBAFAC /* Pods-SheetViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97CF024AC3261AB543C7379E35751ACE /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */; };
-		9A26372687BB7285D3EF32793CBA171A /* AnimatedDismissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */; };
+		93CB89F1051D378FABA557AA83C711E3 /* ContainerViewInnerActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10C2D8C02EB5BFE5B164534A44F35 /* ContainerViewInnerActionBuilder.swift */; };
+		9444518BA507FC1DF3729BE2CA07CFD8 /* AnimatedDismissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */; };
+		9886BDBDC2BD6935A1466CF989994721 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */; };
 		A08644F88EF2A6B10DD3E6A2314398A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AD09F3721B65F8409D46934065D708F8 /* SheetViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFC7D4EFF26C3D444BB20A4B6D01ADDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AB3C1A1FB63C1219CAFA1445DBE49131 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E1358218688659358A0C6915196F1 /* Contract.swift */; };
+		B6DBC5C232E9CDA407D63F14FFBC7869 /* SheetActionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED3F07B9062CC8CD3EB8256D1FE2BA3 /* SheetActionViewBuilder.swift */; };
+		B7253D630607AA58CA5300BBF63B328A /* ContainerViewNoneActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C6477F0D4BBCB648E4F1F30174A31 /* ContainerViewNoneActionBuilder.swift */; };
 		C0FF95D7C5ABE9048C795D3726AB7441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C711456357998FCC75219A85B29A31BA /* Pods-SheetViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AA0F24E7C0F545D13459AF42FD3FC2 /* Pods-SheetViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD585DC49FE0CF6B94289F2993732F41 /* ContainerViewNoneActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */; };
-		D2C8DDFA87F5CD8F04FADEE1B449C2F7 /* AnimatedPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */; };
-		F47871237B852E12C02656E83C3BD375 /* SheetItemActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */; };
+		C87E305380132BF130C066E5F48A0E1E /* AnimatedPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */; };
+		C9251B18FD2A8E1AE06E58E8C8779B7D /* SheetTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */; };
+		CE3FDD30813BF188BD43CAAC92F458A2 /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */; };
+		D126D3EC6815AD0F6568F22A8F5CD562 /* ContainerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26DE722D5B75C0796B00E85A465DCD /* ContainerViewBuilder.swift */; };
+		D70DCC6271DE9164930478D02D93377A /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68A3C6FE2A078D21F582ED08AFC909 /* ViewBuilder.swift */; };
+		DBE6670AE5F6B1F3258E497244382F2B /* ContainerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237C6A47F4A127E364FD6C9AA749DB5 /* ContainerConfiguration.swift */; };
+		E43C86780B381EFACFD02DF81CDF7DF3 /* ContainerViewSeparatelyActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF35C8B44A45578A4C8725FA53E4EA7 /* ContainerViewSeparatelyActionBuilder.swift */; };
+		E5D94875BCD94FD6A0E8D31EE9978375 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */; };
+		E73C2B291EC7D95F938CFC9F6E78AB7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,41 +60,41 @@
 
 /* Begin PBXFileReference section */
 		08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetTypeFactory.swift; sourceTree = "<group>"; };
+		0BF35C8B44A45578A4C8725FA53E4EA7 /* ContainerViewSeparatelyActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewSeparatelyActionBuilder.swift; sourceTree = "<group>"; };
 		151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SheetViewController_Tests.framework; path = "Pods-SheetViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		2D0EEED901E4345816BDE26E64CB19AC /* SheetViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-prefix.pch"; sourceTree = "<group>"; };
 		2D4E1358218688659358A0C6915196F1 /* Contract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
-		307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionViewBuilder.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		323C463D944A57B48F5B5764596EFA99 /* Pods-SheetViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		33F122D791666177D5F3BBABF22E0348 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		39155B877CEF27E16C5A156DF58422AA /* SheetViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SheetViewController.modulemap; sourceTree = "<group>"; };
-		3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewBuilder.swift; sourceTree = "<group>"; };
+		3CA10FF7AEB1B46B9CCCF341B85D2AC9 /* ContainerConfigurationBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerConfigurationBuilder.swift; sourceTree = "<group>"; };
 		43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionView.swift; sourceTree = "<group>"; };
 		454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
 		4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetItemActionView.swift; sourceTree = "<group>"; };
 		4A5EA107B150D0400E618A2D708E92FF /* Pods-SheetViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4D1A0C6D94DF7A66623BCF1F28FC7159 /* SheetViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SheetViewController-Info.plist"; sourceTree = "<group>"; };
+		5237C6A47F4A127E364FD6C9AA749DB5 /* ContainerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerConfiguration.swift; sourceTree = "<group>"; };
 		535D6871DDC191107BBF2F90ACE33E4E /* Pods-SheetViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-Info.plist"; sourceTree = "<group>"; };
 		544FF656F980B35E10AF050165E6AD3E /* Pods-SheetViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5BB69E0E96B02EDD6124D032AF14A159 /* Pods-SheetViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		5C26DE722D5B75C0796B00E85A465DCD /* ContainerViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewBuilder.swift; sourceTree = "<group>"; };
 		5D2E8CC9F57931E29DFB70671FFD116A /* Pods-SheetViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContainerView.swift; sourceTree = "<group>"; };
-		61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentViewBuilder.swift; sourceTree = "<group>"; };
 		612E93F0F293E6BC3E7FF46621240EC4 /* Pods-SheetViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewSeparatelyActionBuilder.swift; sourceTree = "<group>"; };
 		63DECAE1B141594B09846ED01A868EBF /* Pods-SheetViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SheetViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentViewBuilder.swift; sourceTree = "<group>"; };
 		6C953B36839ED0DAA5901EF8A102BEEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		748C6477F0D4BBCB648E4F1F30174A31 /* ContainerViewNoneActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewNoneActionBuilder.swift; sourceTree = "<group>"; };
 		8555C9CD44647899513B02CD19F82554 /* SheetViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SheetViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-umbrella.h"; sourceTree = "<group>"; };
 		99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
-		9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewInnerActionBuilder.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D94F596EED531F875FB28B7DB6DB101 /* Pods-SheetViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Example.modulemap"; sourceTree = "<group>"; };
 		B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedPresenting.swift; sourceTree = "<group>"; };
@@ -103,30 +104,31 @@
 		C0BEAF4A6C3A78DC34A3A060C229DEFC /* Pods-SheetViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SheetViewController.xcconfig; sourceTree = "<group>"; };
 		C8AA0F24E7C0F545D13459AF42FD3FC2 /* Pods-SheetViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerConfiguration.swift; sourceTree = "<group>"; };
+		C9B10C2D8C02EB5BFE5B164534A44F35 /* ContainerViewInnerActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewInnerActionBuilder.swift; sourceTree = "<group>"; };
 		D40F6BCEFA437265E2E091D04D50FEB6 /* Pods-SheetViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewNoneActionBuilder.swift; sourceTree = "<group>"; };
 		E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SheetViewController-dummy.m"; sourceTree = "<group>"; };
 		E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedDismissing.swift; sourceTree = "<group>"; };
 		EB2745F45BB83FBC7340D5926EFBAFAC /* Pods-SheetViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SheetViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		EF81DC1F09BFFD6F8ED1B5ADA315BA69 /* Pods-SheetViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-Info.plist"; sourceTree = "<group>"; };
 		F40ACF248D79A81F42461134D11E51A3 /* Pods-SheetViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SheetViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		FA68A3C6FE2A078D21F582ED08AFC909 /* ViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		FED3F07B9062CC8CD3EB8256D1FE2BA3 /* SheetActionViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4FFB7F3A4CBD526E1324414D56574E27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFC7D4EFF26C3D444BB20A4B6D01ADDD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		89BB2D2E8A2D7C0716B06EB5AA796639 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0FF95D7C5ABE9048C795D3726AB7441 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E96AE17CDDAF1855F53EF3585029AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73C2B291EC7D95F938CFC9F6E78AB7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,16 +157,13 @@
 			path = SheetViewController/Classes/SheetViewController;
 			sourceTree = "<group>";
 		};
-		18ABAE1378DE24BC6F732F8C24F45E6F /* Builder */ = {
+		18DB321BAAA9D6AAB9EF9F9D530360E5 /* SheetContentViewBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				79700305FE94566E6D349C61FBB30734 /* ViewBuilder.swift */,
-				5596BA89F81BC64320E457DB3613B86C /* ContainerViewBuilder */,
-				F616CBAEFB2744A72680AB3F8DAA4619 /* SheetActionViewBuilder */,
-				A5A9F2CC8CE8A968CC0DBEAF00251B50 /* SheetContentViewBuilder */,
+				6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */,
 			);
-			name = Builder;
-			path = SheetViewController/Classes/Builder;
+			name = SheetContentViewBuilder;
+			path = SheetContentViewBuilder;
 			sourceTree = "<group>";
 		};
 		29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */ = {
@@ -187,19 +186,6 @@
 			path = SheetViewController/Classes/Views;
 			sourceTree = "<group>";
 		};
-		5596BA89F81BC64320E457DB3613B86C /* ContainerViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				CDCC95B098F3ED63AC160D60197729DC /* ContainerConfiguration.swift */,
-				3FF91E7877863FE2CC28F9D6D44D45F4 /* ContainerViewBuilder.swift */,
-				9D5DB333F0A6291FCC39A8278A3C558D /* ContainerViewInnerActionBuilder.swift */,
-				D9F7FF0B2AF7C05A86A51AB8F378D6CF /* ContainerViewNoneActionBuilder.swift */,
-				622487183E64FB313E140A768E01C5AB /* ContainerViewSeparatelyActionBuilder.swift */,
-			);
-			name = ContainerViewBuilder;
-			path = ContainerViewBuilder;
-			sourceTree = "<group>";
-		};
 		5E7663D6CDB1523685DAA76AE8ED871D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +194,15 @@
 				B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		62BBD51022E34FD5BA2CE00B8B0C6EC0 /* SheetActionViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FED3F07B9062CC8CD3EB8256D1FE2BA3 /* SheetActionViewBuilder.swift */,
+			);
+			name = SheetActionViewBuilder;
+			path = SheetActionViewBuilder;
 			sourceTree = "<group>";
 		};
 		8BB87324048D07D884F673B422A4775E /* Factory */ = {
@@ -240,13 +235,16 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		A5A9F2CC8CE8A968CC0DBEAF00251B50 /* SheetContentViewBuilder */ = {
+		BA958EBE5B421D263F1B2B23224851B9 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				61153887C306FEEC77446A46EA2525DA /* SheetContentViewBuilder.swift */,
+				FA68A3C6FE2A078D21F582ED08AFC909 /* ViewBuilder.swift */,
+				F31686A36A75D31F48481ACFDF41C204 /* ContainerViewBuilder */,
+				62BBD51022E34FD5BA2CE00B8B0C6EC0 /* SheetActionViewBuilder */,
+				18DB321BAAA9D6AAB9EF9F9D530360E5 /* SheetContentViewBuilder */,
 			);
-			name = SheetContentViewBuilder;
-			path = SheetContentViewBuilder;
+			name = Builder;
+			path = SheetViewController/Classes/Builder;
 			sourceTree = "<group>";
 		};
 		BD58F793E015799BDDDD27417B0569C4 /* Support Files */ = {
@@ -319,7 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */,
-				18ABAE1378DE24BC6F732F8C24F45E6F /* Builder */,
+				BA958EBE5B421D263F1B2B23224851B9 /* Builder */,
 				982868EF96761B08DEA62D268B62812C /* Extensions */,
 				8BB87324048D07D884F673B422A4775E /* Factory */,
 				99FEB6AEC9D81E37BD3C7337B468A833 /* Pod */,
@@ -340,6 +338,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F31686A36A75D31F48481ACFDF41C204 /* ContainerViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				5237C6A47F4A127E364FD6C9AA749DB5 /* ContainerConfiguration.swift */,
+				3CA10FF7AEB1B46B9CCCF341B85D2AC9 /* ContainerConfigurationBuilder.swift */,
+				5C26DE722D5B75C0796B00E85A465DCD /* ContainerViewBuilder.swift */,
+				C9B10C2D8C02EB5BFE5B164534A44F35 /* ContainerViewInnerActionBuilder.swift */,
+				748C6477F0D4BBCB648E4F1F30174A31 /* ContainerViewNoneActionBuilder.swift */,
+				0BF35C8B44A45578A4C8725FA53E4EA7 /* ContainerViewSeparatelyActionBuilder.swift */,
+			);
+			name = ContainerViewBuilder;
+			path = ContainerViewBuilder;
+			sourceTree = "<group>";
+		};
 		F49E8436590DF2223F0F94D46511AEFE /* Pods-SheetViewController_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,23 +368,14 @@
 			path = "Target Support Files/Pods-SheetViewController_Tests";
 			sourceTree = "<group>";
 		};
-		F616CBAEFB2744A72680AB3F8DAA4619 /* SheetActionViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				307E754E97B73F5FD630E383E4268115 /* SheetActionViewBuilder.swift */,
-			);
-			name = SheetActionViewBuilder;
-			path = SheetActionViewBuilder;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		504506CC7C95BE57F0D4883BA0832542 /* Headers */ = {
+		1E42AC7E935961B00BCA6D97E152C5AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD09F3721B65F8409D46934065D708F8 /* SheetViewController-umbrella.h in Headers */,
+				05E4A5B2CB8D3E67687308F76B83E4A6 /* SheetViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,12 +438,12 @@
 		};
 		FBD5BEC8D8A2A6C424A8E77A45CAE027 /* SheetViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28C08EA1757B949CCCB1B6B3C21BC46D /* Build configuration list for PBXNativeTarget "SheetViewController" */;
+			buildConfigurationList = AD2051EB3A34A4410F99D96476847A0D /* Build configuration list for PBXNativeTarget "SheetViewController" */;
 			buildPhases = (
-				504506CC7C95BE57F0D4883BA0832542 /* Headers */,
-				5F479878FCD68D3D57F47A4E2C684D60 /* Sources */,
-				4FFB7F3A4CBD526E1324414D56574E27 /* Frameworks */,
-				8EEE5528EB5089EFDBD987BAD479D089 /* Resources */,
+				1E42AC7E935961B00BCA6D97E152C5AD /* Headers */,
+				779AAAFF3090E5FFFE7F075C8646E9DA /* Sources */,
+				D2E96AE17CDDAF1855F53EF3585029AE /* Frameworks */,
+				21F1261C0058D3F511D7D91A5CDB4E6D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -480,14 +483,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		75112A5C8A4712659AEEBF8300BCA6C4 /* Resources */ = {
+		21F1261C0058D3F511D7D91A5CDB4E6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EEE5528EB5089EFDBD987BAD479D089 /* Resources */ = {
+		75112A5C8A4712659AEEBF8300BCA6C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,33 +523,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F479878FCD68D3D57F47A4E2C684D60 /* Sources */ = {
+		779AAAFF3090E5FFFE7F075C8646E9DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A26372687BB7285D3EF32793CBA171A /* AnimatedDismissing.swift in Sources */,
-				D2C8DDFA87F5CD8F04FADEE1B449C2F7 /* AnimatedPresenting.swift in Sources */,
-				4DCDE907CADAAD0531D0B12761C762E9 /* ClickableView.swift in Sources */,
-				2894FA25CCD84B8EE3E77A14FF8722E8 /* ContainerConfiguration.swift in Sources */,
-				78E39979D10064DB9C2DE03F89902EDE /* ContainerViewBuilder.swift in Sources */,
-				35C0B56CFDD9C86540F0B7B349A248AB /* ContainerViewInnerActionBuilder.swift in Sources */,
-				CD585DC49FE0CF6B94289F2993732F41 /* ContainerViewNoneActionBuilder.swift in Sources */,
-				70F47958A540AE8529DF838D7F2B3E9D /* ContainerViewSeparatelyActionBuilder.swift in Sources */,
-				5077337566D536992A35F0D07E96DDA9 /* Contract.swift in Sources */,
-				667B00AAF126DB4E26782EE69E2C6CCA /* CustomView.swift in Sources */,
-				6F5FF09C77186DDD5EA061BDA1DAE43A /* SheetActionView.swift in Sources */,
-				6A06B38CF4FFD94DBD0557B5DACAC438 /* SheetActionViewBuilder.swift in Sources */,
-				400E17585C3DEFAC8CFD537E291507B1 /* SheetContainerView.swift in Sources */,
-				852BE0570A512BBA3DD9E11F87C7D72E /* SheetContentView.swift in Sources */,
-				147EA9AEC84C6C7FFDB0A8E0F186139F /* SheetContentViewBuilder.swift in Sources */,
-				F47871237B852E12C02656E83C3BD375 /* SheetItemActionView.swift in Sources */,
-				605C4BEEED62C1C135EDBBF39B5ED829 /* SheetTypeFactory.swift in Sources */,
-				3A12C854C6A0090F2F4AFB43532B73C2 /* SheetViewController-dummy.m in Sources */,
-				6098811BCDC3E31A0AFC3BE56D991EE1 /* SheetViewController.swift in Sources */,
-				33784922B6205AB97E38058E28CFEACA /* UIColor.swift in Sources */,
-				871BAC3DD323B398F13F6484C5E47FFA /* UILabel.swift in Sources */,
-				0B39F70551BFF82392C72709CCAC2FAC /* UIView.swift in Sources */,
-				97CF024AC3261AB543C7379E35751ACE /* ViewBuilder.swift in Sources */,
+				9444518BA507FC1DF3729BE2CA07CFD8 /* AnimatedDismissing.swift in Sources */,
+				C87E305380132BF130C066E5F48A0E1E /* AnimatedPresenting.swift in Sources */,
+				3142F146BC4967A48B46141DF2290C26 /* ClickableView.swift in Sources */,
+				DBE6670AE5F6B1F3258E497244382F2B /* ContainerConfiguration.swift in Sources */,
+				1AEF19DA88F9469EE1B6C6397FBF401E /* ContainerConfigurationBuilder.swift in Sources */,
+				D126D3EC6815AD0F6568F22A8F5CD562 /* ContainerViewBuilder.swift in Sources */,
+				93CB89F1051D378FABA557AA83C711E3 /* ContainerViewInnerActionBuilder.swift in Sources */,
+				B7253D630607AA58CA5300BBF63B328A /* ContainerViewNoneActionBuilder.swift in Sources */,
+				E43C86780B381EFACFD02DF81CDF7DF3 /* ContainerViewSeparatelyActionBuilder.swift in Sources */,
+				AB3C1A1FB63C1219CAFA1445DBE49131 /* Contract.swift in Sources */,
+				E5D94875BCD94FD6A0E8D31EE9978375 /* CustomView.swift in Sources */,
+				05263B991943F96156049C5E3CDF8EAB /* SheetActionView.swift in Sources */,
+				B6DBC5C232E9CDA407D63F14FFBC7869 /* SheetActionViewBuilder.swift in Sources */,
+				72590AC2A0FF7CB4195D79AB72A6E117 /* SheetContainerView.swift in Sources */,
+				CE3FDD30813BF188BD43CAAC92F458A2 /* SheetContentView.swift in Sources */,
+				76593E19D7D2DF29C47404D1E8F17F55 /* SheetContentViewBuilder.swift in Sources */,
+				8E3C29B258BC05AFFE75BE59EF05BAF4 /* SheetItemActionView.swift in Sources */,
+				C9251B18FD2A8E1AE06E58E8C8779B7D /* SheetTypeFactory.swift in Sources */,
+				39436D8B7FF83194D5E9D6670B5E64FA /* SheetViewController-dummy.m in Sources */,
+				2984E276217B8B2C01C63AA54F2B53CF /* SheetViewController.swift in Sources */,
+				398E6A431215DEF260E4F01121B07C17 /* UIColor.swift in Sources */,
+				9886BDBDC2BD6935A1466CF989994721 /* UILabel.swift in Sources */,
+				013EE98C93051E2798D45BAC37974A98 /* UIView.swift in Sources */,
+				D70DCC6271DE9164930478D02D93377A /* ViewBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +606,7 @@
 			};
 			name = Debug;
 		};
-		13027EF964388F74BDACF78F8CF058AD /* Release */ = {
+		0CDCFB757497CDAEDC834C6147D3FA84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */;
 			buildSettings = {
@@ -629,11 +633,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -794,38 +797,6 @@
 			};
 			name = Release;
 		};
-		F05AF54804A9605CD2A983AE9238C22C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
-				PRODUCT_MODULE_NAME = SheetViewController;
-				PRODUCT_NAME = SheetViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F0EED5A1553A3470DA740D8B2DE149E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A5EA107B150D0400E618A2D708E92FF /* Pods-SheetViewController_Tests.debug.xcconfig */;
@@ -895,18 +866,42 @@
 			};
 			name = Release;
 		};
+		F9A641DD0BF8CB6220F4C6774EBE3313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SheetViewController/SheetViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SheetViewController/SheetViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SheetViewController/SheetViewController.modulemap";
+				PRODUCT_MODULE_NAME = SheetViewController;
+				PRODUCT_NAME = SheetViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28C08EA1757B949CCCB1B6B3C21BC46D /* Build configuration list for PBXNativeTarget "SheetViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F05AF54804A9605CD2A983AE9238C22C /* Debug */,
-				13027EF964388F74BDACF78F8CF058AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -921,6 +916,15 @@
 			buildConfigurations = (
 				0B135E3B0612C0551D5BE3A4D7E1C69A /* Debug */,
 				F78551D8254BD063EC0DD63787DE65E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2051EB3A34A4410F99D96476847A0D /* Build configuration list for PBXNativeTarget "SheetViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCFB757497CDAEDC834C6147D3FA84 /* Debug */,
+				F9A641DD0BF8CB6220F4C6774EBE3313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

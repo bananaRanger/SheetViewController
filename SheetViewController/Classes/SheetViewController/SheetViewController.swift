@@ -157,7 +157,9 @@ extension SheetViewController {
     let vSizeClass = traitCollection.verticalSizeClass
     let isPortrait = hSizeClass == .compact && vSizeClass == .regular
     
-    let configuration = ContainerViewFactory.configuration(by: _actionType)
+    let configuration = ContainerViewFactory.configuration(
+      with: _alignmentType,
+      and: _actionType)
     
     view.constraints.forEach { constraint in
       if constraint.firstAttribute == .top {

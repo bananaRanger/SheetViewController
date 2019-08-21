@@ -22,9 +22,11 @@
 
 import UIKit
 
-//MARK: - InnerContainerConfiguration struct
-struct InnerContainerConfiguration: ContainerConfiguration {
-  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+//MARK: - Container Configuration Builder 
+
+//MARK: - InnerCenterContainerConfiguration struct
+struct InnerCenterContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 18, height: 24)
 
   var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
   var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
@@ -35,6 +37,32 @@ struct InnerContainerConfiguration: ContainerConfiguration {
   
   var actionBackgroundColor: UIColor = .groupTableViewBackground
 }
+
+//MARK: - InnerBottomContainerConfiguration struct
+struct InnerBottomContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+  
+  var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
+  var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
+  var innerActionSpacing: CGSize = CGSize(width: 16, height: 16)
+  
+  var contentCornerRadius: CGFloat = 0
+  var actionCornerRadius: CGFloat = 12
+  
+  var actionBackgroundColor: UIColor = .groupTableViewBackground
+}
+
+//MARK: - InnerContainerConfigurationBuilder
+class InnerContainerConfigurationBuilder: ContainerConfigurationBuilder {
+  static func create(with type: SheetAlignmentType) -> ContainerConfiguration {
+    switch type {
+    case .center: return InnerCenterContainerConfiguration()
+    case .bottom: return InnerBottomContainerConfiguration()
+    }
+  }
+}
+
+//MARK: - View Configuration Builder
 
 //MARK: - ContainerViewInnerActionBuilder class
 class ContainerViewInnerActionBuilder: ContainerViewBuilder {
@@ -116,7 +144,7 @@ class ContainerCenterViewInnerActionBuilder: ContainerViewBuilder {
       equalTo: parent.rightAnchor,
       constant: -configuration.outerSpacing.width
       ).isActive = true
-        
+    
     container.leftAnchor.constraint(
       equalTo: parent.leftAnchor,
       constant: configuration.outerSpacing.width

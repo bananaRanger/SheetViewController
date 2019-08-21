@@ -22,9 +22,11 @@
 
 import UIKit
 
-//MARK: - NoneContainerConfiguration struct
-struct NoneContainerConfiguration: ContainerConfiguration {
-  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+//MARK: - Container Configuration Builder 
+
+//MARK: - NoneCenterContainerConfiguration struct
+struct NoneCenterContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 18, height: 24)
 
   var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
   var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
@@ -33,6 +35,30 @@ struct NoneContainerConfiguration: ContainerConfiguration {
   var contentCornerRadius: CGFloat = 12
   var actionCornerRadius: CGFloat = 12
 }
+
+//MARK: - NoneBottomContainerConfiguration struct
+struct NoneBottomContainerConfiguration: ContainerConfiguration {
+  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
+  
+  var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
+  var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
+  var innerActionSpacing: CGSize = CGSize(width: 16, height: 16)
+  
+  var contentCornerRadius: CGFloat = 12
+  var actionCornerRadius: CGFloat = 12
+}
+
+//MARK: - NoneContainerConfigurationBuilder
+class NoneContainerConfigurationBuilder: ContainerConfigurationBuilder {
+  static func create(with type: SheetAlignmentType) -> ContainerConfiguration {
+    switch type {
+    case .center: return NoneCenterContainerConfiguration()
+    case .bottom: return NoneBottomContainerConfiguration()
+    }
+  }
+}
+
+//MARK: - View Configuration Builder
 
 //MARK: - ContainerViewNoneActionBuilder class
 class ContainerViewNoneActionBuilder: ContainerViewBuilder {

@@ -38,24 +38,30 @@ class ContainerViewFactory {
   }
   
   //MARK: - Methods
-  static func configuration(by actionType: SheetActionType) -> ContainerConfiguration {
+  static func configuration(with alignmentType: SheetAlignmentType,
+                            and actionType: SheetActionType) -> ContainerConfiguration {
     switch actionType {
     case .separately:
-      return SeparatelyContainerConfiguration()
+      return SeparatelyContainerConfigurationBuilder.create(with: alignmentType)
     case .inner:
-      return InnerContainerConfiguration()
+      return InnerContainerConfigurationBuilder.create(with: alignmentType)
     case .none:
-      return NoneContainerConfiguration()
+      return NoneContainerConfigurationBuilder.create(with: alignmentType)
     }
   }
   
   func containerView(with alignmentType: SheetAlignmentType,
                      and actionType: SheetActionType) -> ContainerView {
+    
+    let configuration = ContainerViewFactory.configuration(
+      with: alignmentType,
+      and: actionType)
+
     switch actionType {
     case .separately:
       let container = ContainerViewSeparatelyActionBuilder(
         parent: parent,
-        configuration: ContainerViewFactory.configuration(by: actionType)
+        configuration: configuration
       )
       
       container.headerTitle = headerTitle
@@ -67,7 +73,7 @@ class ContainerViewFactory {
     case .inner:
       let container = ContainerViewInnerActionBuilder(
         parent: parent,
-        configuration: ContainerViewFactory.configuration(by: actionType)
+        configuration: configuration
       )
       
       container.headerTitle = headerTitle
@@ -79,7 +85,7 @@ class ContainerViewFactory {
     case .none:
       let container = ContainerViewNoneActionBuilder(
         parent: parent,
-        configuration: ContainerViewFactory.configuration(by: actionType)
+        configuration: configuration
       )
       
       container.headerTitle = headerTitle

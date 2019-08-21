@@ -26,7 +26,12 @@ class DiskManagementViewController: UIViewController {
   }
   
   private var customAlert: SheetController {
-    let alert = SheetViewController.alert(with: titleMessage, message: message, actionType: .inner)
+    let alert = SheetViewController.alert(
+      with: titleMessage,
+      message: message,
+      alignmentType: .bottom,
+      actionType: .inner)
+    
     alert.containerView?.action?.backgroundColor = .action
     alert.containerView?.action?.textLabel?.textColor = .white
     
