@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 
 <p align="center">
-  <img width="540" height="186" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
+  <img width="64%" height="64%" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
 </p>
 
 ## About
