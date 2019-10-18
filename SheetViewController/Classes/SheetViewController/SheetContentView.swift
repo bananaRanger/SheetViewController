@@ -133,7 +133,9 @@ fileprivate extension SheetContentView {
     
     if let headerStack = headerStack {
       stack.addArrangedSubview(headerStack)
-      stack.addArrangedSubview(SheetSeparatorView.create(with: separatorColor))
+      if isSeparately == true {
+        stack.addArrangedSubview(SheetSeparatorView.create(with: separatorColor))
+      }
     }
     
     if let scrollView = scrollView {
