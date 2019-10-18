@@ -24,7 +24,7 @@ import UIKit.UIView
 
 //MARK: - UIView extension
 extension UIView {  
-  public func addAllSidesAnchors(to parent: UIView) {
+  func addAllSidesAnchors(to parent: UIView) {
     translatesAutoresizingMaskIntoConstraints = false
     rightAnchor.constraint(equalTo: parent.rightAnchor).isActive = true
     bottomAnchor.constraint(equalTo: parent.bottomAnchor).isActive = true
