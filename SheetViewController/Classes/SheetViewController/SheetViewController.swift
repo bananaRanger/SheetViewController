@@ -22,7 +22,7 @@
 
 import UIKit
 
-public class SheetViewController: UIViewController, SheetController {
+open class SheetViewController: UIViewController, SheetController {
   private var _alignmentType = SheetAlignmentType.bottom
   private var _actionType = SheetActionType.separately
   private let _animatedPresenting = AnimatedPresenting()
@@ -61,6 +61,32 @@ public class SheetViewController: UIViewController, SheetController {
     alert.view.backgroundColor = .clear
     alert.transitioningDelegate = alert
     return alert
+  }
+  
+  private init() {
+    super.init(nibName:nil, bundle:nil)
+  }
+  
+  required public init?(coder: NSCoder) {
+    super.init(coder: coder)
+  }
+  
+  required public init(with title: String?,
+       message: String?,
+       alignmentType: SheetAlignmentType = .bottom,
+       actionType: SheetActionType = .separately,
+       isSeparately: Bool? = true) {
+    super.init(nibName: nil, bundle: nil)
+    let factory = ContainerViewFactory(parent: self.view)
+    factory.headerTitle = title
+    factory.headerMessage = message
+    factory.isSeparately = isSeparately
+    self.containerView = factory.containerView(with: alignmentType, and: actionType)
+    self._alignmentType = alignmentType
+    self._actionType = actionType
+    self.modalPresentationStyle = .overCurrentContext
+    self.view.backgroundColor = .clear
+    self.transitioningDelegate = self
   }
   
   override public func present(_ viewControllerToPresent: UIViewController,

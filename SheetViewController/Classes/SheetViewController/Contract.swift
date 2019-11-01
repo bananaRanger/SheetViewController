@@ -75,6 +75,12 @@ public protocol SheetController: UIViewController {
                     actionType: SheetActionType,
                     isSeparately: Bool?) -> SheetController
   
+  init(with title: String?,
+       message: String?,
+       alignmentType: SheetAlignmentType,
+       actionType: SheetActionType,
+       isSeparately: Bool?)
+  
   func addView(_ view: UIView)
   func addRow(actionView: SheetItemActionView)
 

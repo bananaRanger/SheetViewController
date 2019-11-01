@@ -46,9 +46,8 @@ class SheetContentViewBuilder: ViewBuilder {
   //MARK: - Methods
   @discardableResult
   func create() -> ContentView {
-    let content = SheetContentView(with: .zero, configuration: configuration)
+    let content = SheetContentView(with: .zero, configuration: configuration, isSeparately: isSeparately)
     parent.addSubview(content)
-    content.isSeparately = isSeparately
     content.backgroundColor = configuration.backgroundColor
     content.layer.cornerRadius = configuration.contentCornerRadius
     content.layer.masksToBounds = true

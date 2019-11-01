@@ -58,8 +58,9 @@ public class SheetContentView: UIView, ContentView {
     setup(with: EmptyContainerConfiguration())
   }
   
-  public init(with frame: CGRect = .zero, configuration: ContainerConfiguration) {
+  public init(with frame: CGRect = .zero, configuration: ContainerConfiguration, isSeparately: Bool?) {
     super.init(frame: frame)
+    self.isSeparately = isSeparately
     setup(with: configuration)
   }
   
