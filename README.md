@@ -18,7 +18,7 @@ Customizable native-like sheet alert controller with three action types: separat
 Interaction with ```SheetViewController``` that have ```.inner``` action type:
 
 <p align="center">
-  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.mov?raw=true">
+  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
 </p>
 
 ### Separately action type
