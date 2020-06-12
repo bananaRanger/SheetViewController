@@ -71,9 +71,9 @@ open class SheetViewController: UIViewController, SheetController {
     super.init(coder: coder)
   }
   
-  typealias DidClose = (() -> ())
+  public typealias DidClose = (() -> ())
   
-  var didClose: DidClose?
+  public var didClose: DidClose?
   
   required public init(with title: String?,
        message: String?,
