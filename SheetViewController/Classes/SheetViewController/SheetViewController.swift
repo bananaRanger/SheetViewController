@@ -71,6 +71,10 @@ open class SheetViewController: UIViewController, SheetController {
     super.init(coder: coder)
   }
   
+  typealias DidClose = (() -> ())
+  
+  var didClose: DidClose?
+  
   required public init(with title: String?,
        message: String?,
        alignmentType: SheetAlignmentType = .bottom,
@@ -120,7 +124,7 @@ open class SheetViewController: UIViewController, SheetController {
                               and handler: ActionButtonTouchUpInsideHandler?) {
     containerView?.action?.textLabel?.text = title
     containerView?.action?.handler = { [weak self] in
-      self?.dismiss(animated: true, completion: nil)
+      self?.closeSheet()
       handler?()
     }
   }
@@ -128,12 +132,18 @@ open class SheetViewController: UIViewController, SheetController {
   override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
     guard touches.first?.view == view else { return }
-    dismiss(animated: true, completion: nil)
+    closeSheet()
   }
 }
 
 //MARK: - Fileprivate extension of SheetViewController
 fileprivate extension SheetViewController {
+  func closeSheet() {
+    dismiss(animated: true) { [weak self] in
+      self?.didClose?()
+    }
+  }
+  
   func resetContainerViewCenter() {
     _containerViewCenter = view?.convert(containerView?.center ?? .zero, to: view)
   }
@@ -156,7 +166,7 @@ fileprivate extension SheetViewController {
       guard view.center.y + translation.y >= center.y else { return }
       
       guard view.frame.origin.y < center.y else {
-        dismiss(animated: true, completion: nil)
+        closeSheet()
         return
       }
       
