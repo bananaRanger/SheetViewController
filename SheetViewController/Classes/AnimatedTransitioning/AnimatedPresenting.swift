@@ -34,6 +34,7 @@ class AnimatedPresenting: NSObject {
   private let alpha: CGFloat = 0.64
   let duration: TimeInterval = 0.64
   
+  var transitionBackgroundColor: UIColor?
 }
 
 //MARK: - UIViewControllerAnimatedTransitioning
@@ -61,7 +62,7 @@ extension AnimatedPresenting: UIViewControllerAnimatedTransitioning {
       delay: 0,
       options: .curveEaseIn,
       animations: { [weak self] in
-        toView.backgroundColor = UIColor.black.withAlphaComponent(self?.alpha ?? 0)
+        toView.backgroundColor = self?.transitionBackgroundColor?.withAlphaComponent(self?.alpha ?? 0)
     })
     
     let initialAlertFrame = alertView.bounds

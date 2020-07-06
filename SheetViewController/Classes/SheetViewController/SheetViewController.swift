@@ -48,7 +48,8 @@ open class SheetViewController: UIViewController, SheetController {
                            message: String?,
                            alignmentType: SheetAlignmentType = .bottom,
                            actionType: SheetActionType = .separately,
-                           isSeparately: Bool? = true) -> SheetController {
+                           isSeparately: Bool? = true,
+                           transitionBackgroundColor: UIColor = .black) -> SheetController {
     let alert = SheetViewController()
     let factory = ContainerViewFactory(parent: alert.view)
     factory.headerTitle = title
@@ -57,6 +58,7 @@ open class SheetViewController: UIViewController, SheetController {
     alert.containerView = factory.containerView(with: alignmentType, and: actionType)
     alert._alignmentType = alignmentType
     alert._actionType = actionType
+    alert._animatedPresenting.transitionBackgroundColor = transitionBackgroundColor
     alert.modalPresentationStyle = .overCurrentContext
     alert.view.backgroundColor = .clear
     alert.transitioningDelegate = alert
@@ -79,7 +81,8 @@ open class SheetViewController: UIViewController, SheetController {
        message: String?,
        alignmentType: SheetAlignmentType = .bottom,
        actionType: SheetActionType = .separately,
-       isSeparately: Bool? = true) {
+       isSeparately: Bool? = true,
+       transitionBackgroundColor: UIColor = .black) {
     super.init(nibName: nil, bundle: nil)
     let factory = ContainerViewFactory(parent: self.view)
     factory.headerTitle = title
@@ -88,6 +91,7 @@ open class SheetViewController: UIViewController, SheetController {
     self.containerView = factory.containerView(with: alignmentType, and: actionType)
     self._alignmentType = alignmentType
     self._actionType = actionType
+    self._animatedPresenting.transitionBackgroundColor = transitionBackgroundColor
     self.modalPresentationStyle = .overCurrentContext
     self.view.backgroundColor = .clear
     self.transitioningDelegate = self
