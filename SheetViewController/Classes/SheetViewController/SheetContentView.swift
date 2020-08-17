@@ -66,6 +66,7 @@ public class SheetContentView: UIView, ContentView {
   
   //MARK: - Methods
   public func addHeaderView(_ view: UIView) {
+    headerStack?.isHidden = false
     headerStack?.addArrangedSubview(view)
   }
   
@@ -92,6 +93,7 @@ fileprivate extension SheetContentView {
     headerStack?.isLayoutMarginsRelativeArrangement = true
     headerStack?.spacing = configuration.innerContentSpacing.height
     headerStack?.axis = .vertical
+    headerStack?.isHidden = true
     
     let contentStack = UIStackView(frame: .zero)
     contentStack.axis = .vertical
