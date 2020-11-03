@@ -22,7 +22,9 @@
 
 import UIKit.UIView
 
+//MARK: - typealiases
 public typealias ActionButtonTouchUpInsideHandler = (() -> Void)
+public typealias ContainerConfigurationModifier = ((inout SheetContainerConfiguration) -> (SheetContainerConfiguration))
 
 //MARK: SheetAlignmentType enum
 public enum SheetAlignmentType: Int {
@@ -42,9 +44,6 @@ public protocol ContentView: UIView {
   var headerViews: [UIView] { get }
   var bodyViews: [UIView] { get }
   
-  var isSeparately: Bool? { get }
-  var separatorColor: UIColor { get set }
-
   func addHeaderView(_ view: UIView)
   func addBodyView(_ view: UIView)
 }
@@ -63,29 +62,23 @@ public protocol ContainerView: UIView {
 
 //MARK: - SheetController protocol
 public protocol SheetController: UIViewController {
-  var containerView: ContainerView? { get set }
-  var sheetActionType: SheetActionType? { get }
-  var verticalOffset: CGFloat? { get }
+  var containerView: ContainerView? { get }
+  var alignmentType: SheetAlignmentType? { get }
+  var actionType: SheetActionType? { get }
+  
   var animatedPresenting: UIViewControllerAnimatedTransitioning? { get }
   var animatedDismissing: UIViewControllerAnimatedTransitioning? { get }
-  
-  static func alert(with title: String?,
-                    message: String?,
-                    alignmentType: SheetAlignmentType,
-                    actionType: SheetActionType,
-                    isSeparately: Bool?,
-                    transitionBackgroundColor: UIColor) -> SheetController
-  
+    
   init(with title: String?,
        message: String?,
        alignmentType: SheetAlignmentType,
        actionType: SheetActionType,
-       isSeparately: Bool?,
-       transitionBackgroundColor: UIColor)
-  
+       modifier: ContainerConfigurationModifier?)
+    
   func addView(_ view: UIView)
   func addRow(actionView: SheetItemActionView)
 
-  func setCancelButton(title: String?,
-                       and handler: ActionButtonTouchUpInsideHandler?)
+  func setCancelButton(
+    title: String?,
+    and handler: ActionButtonTouchUpInsideHandler?)
 }

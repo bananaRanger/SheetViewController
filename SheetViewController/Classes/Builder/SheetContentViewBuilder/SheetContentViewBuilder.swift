@@ -22,11 +22,9 @@
 
 import UIKit
 
-//MARK: - SheetContentViewBuilder class
 class SheetContentViewBuilder: ViewBuilder {
-  
-  //MARK: - Properties
-  private let configuration: ContainerConfiguration
+  //MARK: properties
+  private let configuration: SheetContainerConfiguration
   
   var action: ActionView?
   
@@ -34,19 +32,17 @@ class SheetContentViewBuilder: ViewBuilder {
   var headerMessage: String?
   
   var parent: UIView
-  
-  var isSeparately: Bool?
-  
-  //MARK: - Inits
-  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+    
+  //MARK: inits
+  internal required init(parent: UIView, configuration: SheetContainerConfiguration) {
     self.parent = parent
     self.configuration = configuration
   }
   
-  //MARK: - Methods
+  //MARK: methods
   @discardableResult
   func create() -> ContentView {
-    let content = SheetContentView(with: .zero, configuration: configuration, isSeparately: isSeparately)
+    let content = SheetContentView(with: .zero, configuration: configuration)
     parent.addSubview(content)
     content.backgroundColor = configuration.backgroundColor
     content.layer.cornerRadius = configuration.contentCornerRadius
@@ -77,11 +73,15 @@ class SheetContentViewBuilder: ViewBuilder {
       ).isActive = true
     
     if let headerTitle = headerTitle {
-      content.addHeaderView(UILabel.label(with: headerTitle, type: .title))
+      content.addHeaderView(
+        UILabel.label(with: headerTitle, color: configuration.headerTextColor, type: .title)
+      )
     }
     
     if let headerMessage = headerMessage {
-      content.addHeaderView(UILabel.label(with: headerMessage, type: .message))
+      content.addHeaderView(
+        UILabel.label(with: headerMessage, color: configuration.headerTextColor, type: .message)
+      )
     }
     return content
   }

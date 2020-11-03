@@ -23,5 +23,5 @@
 import UIKit
 
 protocol ContainerConfigurationBuilder {
-  static func create(with type: SheetAlignmentType) -> ContainerConfiguration
+  static func create(with type: SheetAlignmentType) -> SheetContainerConfiguration
 }

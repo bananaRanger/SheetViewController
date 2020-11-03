@@ -23,17 +23,14 @@
 import UIKit
 
 class AnimatedPresenting: NSObject {
-
-  //MARK: - Private structs
   private struct AnimationConfiguration {
     static let damping: CGFloat = 0.74
     static let velocity: CGFloat = 0.74
   }
   
-  //MARK: - Properties
-  private let alpha: CGFloat = 0.64
+  //MARK: properties
   let duration: TimeInterval = 0.64
-  
+  let delay: TimeInterval = .zero
   var transitionBackgroundColor: UIColor?
 }
 
@@ -59,15 +56,15 @@ extension AnimatedPresenting: UIViewControllerAnimatedTransitioning {
     
     UIView.animate(
       withDuration: duration / 2,
-      delay: 0,
+      delay: delay,
       options: .curveEaseIn,
       animations: { [weak self] in
-        toView.backgroundColor = self?.transitionBackgroundColor?.withAlphaComponent(self?.alpha ?? 0)
+        toView.backgroundColor = self?.transitionBackgroundColor
     })
     
     let initialAlertFrame = alertView.bounds
 
-    alertView.frame.origin.x = 0
+    alertView.frame.origin.x = .zero
     alertView.frame.origin.y = fromView.bounds.height
 
     UIView.dampingAnimate(

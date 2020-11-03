@@ -22,7 +22,7 @@
 
 import UIKit.UIView
 
-//MARK: - UIView extension
+//MARK: - UIView extension (constraints)
 extension UIView {  
   func addAllSidesAnchors(to parent: UIView) {
     translatesAutoresizingMaskIntoConstraints = false

@@ -22,77 +22,71 @@
 
 import UIKit
 
-//MARK: - SheetContentView class
 public class SheetContentView: UIView, ContentView {
-  
-  //MARK: - Properties
+  //MARK: properties
   private var stack: UIStackView?
   private var headerStack: UIStackView?
   private var contentStack: UIStackView?
   private var scrollView: UIScrollView?
 
-  public var configuration: ContainerConfiguration?
+  private var configuration: SheetContainerConfiguration
   
-  public var headerViews = [UIView]()
-  public var bodyViews = [UIView]()
-
-  public var isSeparately: Bool?
-
-  public var separatorColor = UIColor.groupTableViewBackground {
-    didSet {
-      let subviews = contentStack?.arrangedSubviews
-      subviews?.filter({ $0 is SheetSeparatorView }).forEach { [weak self] view in
-        view.backgroundColor = self?.separatorColor
-      }
-    }
+  public var headerViews: [UIView] {
+    return headerStack?.arrangedSubviews ?? []
   }
   
-  //MARK: - Inits
+  public var bodyViews: [UIView] {
+    return contentStack?.arrangedSubviews ?? []
+  }
+  
+  //MARK: inits
   override internal init(frame: CGRect) {
+    self.configuration = ContainerConfiguration()
     super.init(frame: frame)
-    setup(with: EmptyContainerConfiguration())
+    setup()
   }
   
   internal required init?(coder aDecoder: NSCoder) {
+    self.configuration = ContainerConfiguration()
     super.init(coder: aDecoder)
-    setup(with: EmptyContainerConfiguration())
+    setup()
   }
   
-  public init(with frame: CGRect = .zero, configuration: ContainerConfiguration, isSeparately: Bool?) {
+  public init(with frame: CGRect = .zero, configuration: SheetContainerConfiguration) {
+    self.configuration = configuration
     super.init(frame: frame)
-    self.isSeparately = isSeparately
-    setup(with: configuration)
+    setup()
   }
   
-  //MARK: - Methods
+  //MARK: methods
   public func addHeaderView(_ view: UIView) {
     headerStack?.addArrangedSubview(view)
   }
   
   public func addBodyView(_ view: UIView) {
-    if contentStack?.arrangedSubviews.isEmpty == false && isSeparately == true {
-      let separator = SheetSeparatorView.create(with: separatorColor)
+    if contentStack?.arrangedSubviews.isEmpty == false && configuration.isSeparatorLineShowed {
+      let separator = SheetSeparatorView.create(with: configuration.separatorColor)
       contentStack?.addArrangedSubview(separator)
     }
     contentStack?.addArrangedSubview(view)
   }
-  
 }
 
 //MARK: - Fileprivate extension of SheetContentView
 fileprivate extension SheetContentView {
-  func setup(with configuration: ContainerConfiguration) {
-    self.configuration = configuration
-
+  func setup() {
     headerStack = UIStackView(frame: .zero)
-    headerStack?.layoutMargins = UIEdgeInsets(top: configuration.innerHeaderSpacing.height,
-                                             left: configuration.innerHeaderSpacing.width,
-                                             bottom: configuration.innerHeaderSpacing.height,
-                                             right: configuration.innerHeaderSpacing.width)
+    headerStack?.spacing = configuration.headerVerticalSpacing
     headerStack?.isLayoutMarginsRelativeArrangement = true
-    headerStack?.spacing = configuration.innerContentSpacing.height
     headerStack?.axis = .vertical
     
+    headerStack?.layoutMargins = UIEdgeInsets(
+      top: configuration.innerHeaderSpacing.height,
+      left: configuration.innerHeaderSpacing.width,
+      bottom: configuration.innerHeaderSpacing.height,
+      right: configuration.innerHeaderSpacing.width
+    )
+  
     let contentStack = UIStackView(frame: .zero)
     contentStack.axis = .vertical
     
@@ -134,8 +128,9 @@ fileprivate extension SheetContentView {
     
     if let headerStack = headerStack {
       stack.addArrangedSubview(headerStack)
-      if isSeparately == true {
-        stack.addArrangedSubview(SheetSeparatorView.create(with: separatorColor))
+      if configuration.isSeparatorLineShowed {
+        let separatorView = SheetSeparatorView.create(with: configuration.separatorColor)
+        stack.addArrangedSubview(separatorView)
       }
     }
     
@@ -151,8 +146,8 @@ fileprivate extension SheetContentView {
 //MARK: - UIScrollViewDelegate
 extension SheetContentView: UIScrollViewDelegate {
   public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    if scrollView.contentOffset.x != 0 {
-      scrollView.contentOffset.x = 0
+    if scrollView.contentOffset.x != .zero {
+      scrollView.contentOffset.x = .zero
     }
   }
 }
@@ -160,6 +155,7 @@ extension SheetContentView: UIScrollViewDelegate {
 //MARK: - Fileprivate class SheetSeparatorView
 fileprivate class SheetSeparatorView: UIView {
   static func create(with color: UIColor, height: CGFloat = 1) -> SheetSeparatorView {
+    let height = height / UIScreen.main.scale
     let separator = SheetSeparatorView(frame: .zero)
     separator.backgroundColor = color
     separator.translatesAutoresizingMaskIntoConstraints = false

@@ -22,29 +22,29 @@
 
 import UIKit
 
-//MARK: - SheetActionViewBuilder class
 class SheetActionViewBuilder: ViewBuilder {
-  
-  //MARK: - Properties
-  private let configuration: ContainerConfiguration
+  //MARK: properties
+  private let configuration: SheetContainerConfiguration
   
   var actionTitle: String?
   
   var parent: UIView
   
-  //MARK: - Inits
-  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+  //MARK: inits
+  internal required init(parent: UIView, configuration: SheetContainerConfiguration) {
     self.parent = parent
     self.configuration = configuration
   }
   
-  //MARK: - Methods
+  //MARK: methods
   @discardableResult
   func create() -> ActionView {
-    let action = SheetActionView(title: actionTitle)
+    let action = SheetActionView(title: actionTitle, color: configuration.actionTextColor)
     parent.addSubview(action)
+    action.textLabel?.font = configuration.actionTextFont
     action.backgroundColor = configuration.actionBackgroundColor
     action.layer.cornerRadius = configuration.actionCornerRadius
+    
     action.translatesAutoresizingMaskIntoConstraints = false
     
     action.heightAnchor.constraint(

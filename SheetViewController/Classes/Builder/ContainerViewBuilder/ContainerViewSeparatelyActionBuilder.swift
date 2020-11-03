@@ -22,49 +22,29 @@
 
 import UIKit
 
-//MARK: - Container Configuration Builder
-
-//MARK: - SeparatelyCenterContainerConfiguration struct
-struct SeparatelyCenterContainerConfiguration: ContainerConfiguration {
-  var outerSpacing: CGSize = CGSize(width: 18, height: 24)
-  
-  var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
-  var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
-  var innerActionSpacing: CGSize = CGSize(width: 0, height: 8)
-    
-  var contentCornerRadius: CGFloat = 12
-  var actionCornerRadius: CGFloat = 12
-}
-
-//MARK: - SeparatelyBottomContainerConfiguration struct
-struct SeparatelyBottomContainerConfiguration: ContainerConfiguration {
-  var outerSpacing: CGSize = CGSize(width: 8, height: 24)
-  
-  var innerContentSpacing: CGSize = CGSize(width: 0, height: 8)
-  var innerHeaderSpacing: CGSize = CGSize(width: 16, height: 16)
-  var innerActionSpacing: CGSize = CGSize(width: 0, height: 8)
-  
-  var contentCornerRadius: CGFloat = 12
-  var actionCornerRadius: CGFloat = 12
-}
-
 //MARK: - SeparatelyContainerConfigurationBuilder
 class SeparatelyContainerConfigurationBuilder: ContainerConfigurationBuilder {
-  static func create(with type: SheetAlignmentType) -> ContainerConfiguration {
+  static func create(with type: SheetAlignmentType) -> SheetContainerConfiguration {
     switch type {
-    case .center: return SeparatelyCenterContainerConfiguration()
-    case .bottom: return SeparatelyBottomContainerConfiguration()
+    case .center:
+      var configuration = ContainerConfiguration.default
+      configuration.innerActionSpacing = CGSize(width: 0, height: 8)
+      configuration.contentCornerRadius = 12
+      return configuration
+    case .bottom:
+      var configuration = ContainerConfiguration.default
+      configuration.outerSpacing = CGSize(width: 8, height: 24)
+      configuration.innerActionSpacing = CGSize(width: 0, height: 8)
+      configuration.contentCornerRadius = 12
+      return configuration
     }
   }
 }
 
-//MARK: - View Configuration Builder 
-
 //MARK: - ContainerViewSeparatelyActionBuilder class
 class ContainerViewSeparatelyActionBuilder: ContainerViewBuilder {
-  
-  //MARK: - Properties
-  private let configuration: ContainerConfiguration
+  //MARK: properties
+  private let configuration: SheetContainerConfiguration
   
   var parent: UIView
   
@@ -75,13 +55,13 @@ class ContainerViewSeparatelyActionBuilder: ContainerViewBuilder {
   
   var alignmentType: SheetAlignmentType = .bottom
   
-  //MARK: - Inits
-  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+  //MARK: inits
+  internal required init(parent: UIView, configuration: SheetContainerConfiguration) {
     self.parent = parent
     self.configuration = configuration
   }
   
-  //MARK: - Methods
+  //MARK: methods
   @discardableResult
   func create() -> ContainerView {
     switch alignmentType {
@@ -109,9 +89,8 @@ class ContainerViewSeparatelyActionBuilder: ContainerViewBuilder {
 
 //MARK: - ContainerCenterViewSeparatelyActionBuilder class
 class ContainerCenterViewSeparatelyActionBuilder: ContainerViewBuilder {
-  
-  //MARK: - Properties
-  private let configuration: ContainerConfiguration
+  //MARK: properties
+  private let configuration: SheetContainerConfiguration
   
   var parent: UIView
   
@@ -120,13 +99,13 @@ class ContainerCenterViewSeparatelyActionBuilder: ContainerViewBuilder {
   var actionTitle: String?
   var isSeparately: Bool?
   
-  //MARK: - Inits
-  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+  //MARK: inits
+  internal required init(parent: UIView, configuration: SheetContainerConfiguration) {
     self.parent = parent
     self.configuration = configuration
   }
   
-  //MARK: - Methods
+  //MARK: methods
   @discardableResult
   func create() -> ContainerView {
     let container = SheetContainerView(frame: .zero)
@@ -147,7 +126,7 @@ class ContainerCenterViewSeparatelyActionBuilder: ContainerViewBuilder {
     
     container.topAnchor.constraint(
       greaterThanOrEqualTo: parent.topAnchor,
-      constant: configuration.outerSpacing.height * configuration.outerMultiplier
+      constant: configuration.outerSpacing.height * configuration.portraitTopOuterMultiplier
       ).isActive = true
     
     container.centerXAnchor.constraint(
@@ -168,7 +147,6 @@ class ContainerCenterViewSeparatelyActionBuilder: ContainerViewBuilder {
     contentViewBuilder.headerTitle = headerTitle
     contentViewBuilder.headerMessage = headerMessage
     contentViewBuilder.action = action
-    contentViewBuilder.isSeparately = isSeparately
     let content = contentViewBuilder.create()
     
     container.action = action
@@ -176,14 +154,12 @@ class ContainerCenterViewSeparatelyActionBuilder: ContainerViewBuilder {
     
     return container
   }
-  
 }
 
 //MARK: - ContainerBottomViewSeparatelyActionBuilder class
 class ContainerBottomViewSeparatelyActionBuilder: ContainerViewBuilder {
-  
-  //MARK: - Properties
-  private let configuration: ContainerConfiguration
+  //MARK: properties
+  private let configuration: SheetContainerConfiguration
   
   var parent: UIView
   
@@ -192,13 +168,13 @@ class ContainerBottomViewSeparatelyActionBuilder: ContainerViewBuilder {
   var actionTitle: String?
   var isSeparately: Bool?
   
-  //MARK: - Inits
-  internal required init(parent: UIView, configuration: ContainerConfiguration) {
+  //MARK: inits
+  internal required init(parent: UIView, configuration: SheetContainerConfiguration) {
     self.parent = parent
     self.configuration = configuration
   }
   
-  //MARK: - Methods
+  //MARK: methods
   @discardableResult
   func create() -> ContainerView {
     let container = SheetContainerView(frame: .zero)
@@ -224,7 +200,7 @@ class ContainerBottomViewSeparatelyActionBuilder: ContainerViewBuilder {
     
     container.topAnchor.constraint(
       greaterThanOrEqualTo: parent.topAnchor,
-      constant: configuration.outerSpacing.height * configuration.outerMultiplier
+      constant: configuration.outerSpacing.height * configuration.portraitTopOuterMultiplier
       ).isActive = true
     
     let actionViewBuilder = SheetActionViewBuilder(parent: container,
@@ -237,7 +213,6 @@ class ContainerBottomViewSeparatelyActionBuilder: ContainerViewBuilder {
     contentViewBuilder.headerTitle = headerTitle
     contentViewBuilder.headerMessage = headerMessage
     contentViewBuilder.action = action
-    contentViewBuilder.isSeparately = isSeparately
     let content = contentViewBuilder.create()
     
     container.action = action
@@ -245,5 +220,4 @@ class ContainerBottomViewSeparatelyActionBuilder: ContainerViewBuilder {
     
     return container
   }
-  
 }

@@ -22,6 +22,7 @@
 
 import UIKit
 
+//MARK: - typealiases
 public typealias ActionViewClickHandler = ((SheetItemActionView) -> Void)
 
 //MARK: - ItemActionView protocol
@@ -32,19 +33,21 @@ public protocol ItemActionView where Self: UIView {
 
 //MARK: - ItemActionView implementation
 public class SheetItemActionView: ClickableView, ItemActionView {
-
-  //MARK: - Private structs
+  //MARK: private structs
   private struct Constraints {
-    static let leftConstant: CGFloat = 16
-    static let heightMultiplier: CGFloat = 0.42
+    static let leftConstant: CGFloat = 24
+    static let heightMultiplier: CGFloat = 0.44
     static let widthMultiplier: CGFloat = 1
     static let verticalConstant: CGFloat = 14
   }
   
-  //MARK: - Properties
-  private var _imageView: UIImageView?
+  //MARK: properties
   private var _textLabel: UILabel?
+  private var _textColor: UIColor?
   
+  private var _imageView: UIImageView?
+  private var _imageColor: UIColor?
+
   public var imageView: UIImageView? {
     return _imageView
   }
@@ -53,7 +56,7 @@ public class SheetItemActionView: ClickableView, ItemActionView {
     return _textLabel
   }
   
-  //MARK: - Inits
+  //MARK: inits
   private override init(frame: CGRect) {
     super.init(frame: frame)
     setup()
@@ -64,25 +67,29 @@ public class SheetItemActionView: ClickableView, ItemActionView {
     setup()
   }
   
-  //MARK: Methods
+  //MARK: methods
   public class func make(with title: String?,
-                  image: UIImage?,
-                  clickHandler: ActionViewClickHandler?) -> SheetItemActionView {
+                         titleColor: UIColor? = .black,
+                         image: UIImage?,
+                         imageColor: UIColor? = .black,
+                         clickHandler: ActionViewClickHandler?) -> SheetItemActionView {
     let view = SheetItemActionView(frame: .zero)
+    view._textColor = titleColor
+    view._imageColor = imageColor
     view.setup(with: title, image: image)
     view.clickHandler = { _ in clickHandler?(view) } 
     return view
   }
-  
 }
 
 //MARK: - Fileprivate extension of SheetItemActionView
 fileprivate extension SheetItemActionView {
   private func setup(with title: String? = nil, image: UIImage? = nil) {
-    let label = UILabel.label(with: title, type: .action)
+    let label = UILabel.label(with: title, color: _textColor, type: .action)
     addSubview(label)
     
     let imageView = UIImageView(frame: .zero)
+    imageView.tintColor = _imageColor
     imageView.image = image
     addSubview(imageView)
     

@@ -25,7 +25,5 @@ import UIKit
 protocol ContainerViewBuilder: ViewBuilder {
   var headerTitle: String? { get set }
   var headerMessage: String? { get set }
-  var actionTitle: String? { get set }
-  
-  var isSeparately: Bool? { get set }
+  var actionTitle: String? { get set }  
 }

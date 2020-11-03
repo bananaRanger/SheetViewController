@@ -26,8 +26,9 @@ protocol NibView where Self : UIView {
   static func instanceFromNib() -> Self?
 }
 
+//MARK: - NibView extension
 extension NibView {
   static func instanceFromNib() -> Self? {
-    return Bundle.main.loadNibNamed(String(describing:self), owner: self, options: nil)?.first as? Self
+    return Bundle.main.loadNibNamed(String(describing: self), owner: self, options: nil)?.first as? Self
   }
 }

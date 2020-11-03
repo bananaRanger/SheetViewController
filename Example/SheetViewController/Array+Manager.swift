@@ -1,6 +1,6 @@
 // MIT License
 //
-// Copyright (c) 2019 Anton Yereshchenko
+// Copyright (c) 2020 Anton Yereshchenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,19 +20,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit.UIColor
+import UIKit
 
-//MARK: - UIColor extension
-extension UIColor {
-  public static var action: UIColor {
-    return #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-  }
-  
-  public static var message: UIColor {
-    return #colorLiteral(red: 0.5568627451, green: 0.5568627451, blue: 0.5568627451, alpha: 1)
-  }
-  
-  public static var background: UIColor {
-    return #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
+extension Array where Element == Manager {
+  static var mockItems: [Element] {
+    [
+      Manager(
+        name: "Luke Parr",
+        phone: "+1 202 555 0128",
+        photo: UIImage(named: "ManagerIcon1")
+      ),
+      Manager(
+        name: "Sonia Bailey",
+        phone: "+1 202 555 0128",
+        photo: UIImage(named: "ManagerIcon2")
+      ),
+      Manager(
+        name: "Joshua Dowd",
+        phone: "+1 202 555 0162",
+        photo: UIImage(named: "ManagerIcon3")
+      ),
+      Manager(
+        name: "Joseph Carr",
+        phone: "+1 202 555 0123",
+        photo: UIImage(named: "ManagerIcon4")
+      ),
+      Manager(
+        name: "Christian Young",
+        phone: "+1 202 555 0128",
+        photo: UIImage(named: "ManagerIcon5")
+      )
+    ]
   }
 }
