@@ -9,9 +9,16 @@
   <img width="64%" height="64%" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
 </p>
 
-## About
+SheetViewController is a fully-customizable and native-like alert sheet controller library written in Swift.
 
-Customizable native-like sheet alert controller with three action types: separately, inner, none.
+## Features
+
+- [x] Three types of alerts: with inner action, with outer action, without action.
+- [x] Two alignment types of alerts: bottom, center.
+- [x] Fully customisation components. You can customise content (header, actions), color, fonts, forms, spaces and etc.
+- [x] Works on iPad.
+- [x] Easy to use.
+- [x] Works on both orientations: portrait, landscape.
 
 ### Demo
 
@@ -87,7 +94,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 inhibit_all_warnings!
 
-target 'YOUR-TARGET-NAME' do
+target 'YOUR_TARGET_NAME' do
   use_frameworks!
 	pod 'SheetViewController'
 end
@@ -104,7 +111,15 @@ end
 // 'customRowView' - the object of class 'UIView' or his inheritors.
 // 'row' - the object of class 'SheetItemActionView'.
 
-let alert = SheetViewController.alert(with: titleMessage, message: message, actionType: .inner)
+let sheet = SheetViewController.init(
+      with: titleMessage,
+      message: message,
+      alignmentType: .bottom,
+      actionType: .inner) { configuration in
+      // UI customization
+      return configuration
+}
+
 alert.setCancelButton(title: cancelTitle, and: cancelHandler)
 
 alert.addView(customRowView)
@@ -115,7 +130,7 @@ present(alert, animated: true, completion: nil)
 
 ## Author
 
-Anton Yereshchenko
+[📧](mailto:anton.yereshchenko@gmail.com?subject=[GitHub]%20Source%20SheetViewController) Anton Yereshchenko
 
 ## License
 
@@ -130,3 +145,7 @@ Designing for iPhone in Figma - https://setproduct.com/ios
 Icons:
 
 Icons8 - https://icons8.com
+
+---
+
+*Good UX can be beautiful.*
