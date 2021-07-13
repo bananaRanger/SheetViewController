@@ -5,11 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 
+SheetViewController is a fully customizable and native-like alert sheet controller UI component written in Swift.
+
 <p align="center">
-  <img width="64%" height="64%" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
+  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/00-preview.png?raw=true">
 </p>
 
-SheetViewController is a fully-customizable and native-like alert sheet controller library written in Swift.
 
 ## Features
 
@@ -28,58 +29,36 @@ Interaction with ```SheetViewController``` that have ```.inner``` action type:
   <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
 </p>
 
-### Separately action type
+## UI customization Q&A
 
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .separately)
-```
-
-#### Portrait
+### How to change the color?
 
 <p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_portrait.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/01-how%20to%20change%20the%20color.png?raw=true">
 </p>
 
-#### Landscape
+### How to change the corner radius?
 
 <p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_landscape.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/02-how%20to%20change%20the%20corner%20radius.png?raw=true">
 </p>
 
-### Inner action type
-
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .inner)
-```
-
-#### Portrait
+### How to change the spacing?
 
 <p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_portrait.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/03-how%20to%20change%20the%20spacing.png?raw=true">
 </p>
 
-#### Landscape
+### How to change sheet offsets?
 
 <p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_landscape.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/04-how%20to%20change%20sheet%20offsets.png?raw=true">
 </p>
 
-### None action type
-
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .none)
-```
-
-#### Portrait
+### Other settings
 
 <p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_portrait.png?raw=true">
-</p>
-
-#### Landscape
-
-<p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_landscape.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/05-other%20settings.png?raw=true">
 </p>
 
 ## Example
@@ -110,15 +89,24 @@ end
 //
 // 'customRowView' - the object of class 'UIView' or his inheritors.
 // 'row' - the object of class 'SheetItemActionView'.
+//
+// 'alignmentType' values:
+// - .bottom 
+// - .center
+//
+// 'alignmentType' values:
+// - .separately 
+// - .inner
+// - .none
 
-let sheet = SheetViewController.init(
+let sheet = Self.init(
       with: titleMessage,
       message: message,
       alignmentType: .bottom,
-      actionType: .inner) { configuration in
-      // UI customization
-      return configuration
-}
+      actionType: .separately) { configuration in
+      	// UI customization (see UI customization Q&A section)
+        return configuration
+    }
 
 alert.setCancelButton(title: cancelTitle, and: cancelHandler)
 
@@ -145,7 +133,3 @@ Designing for iPhone in Figma - https://setproduct.com/ios
 Icons:
 
 Icons8 - https://icons8.com
-
----
-
-*Good UX can be beautiful.*
