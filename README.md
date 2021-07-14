@@ -91,13 +91,13 @@ end
 // 'row' - the object of class 'SheetItemActionView'.
 //
 // 'alignmentType' values:
-// - .bottom 
-// - .center
+// - .bottom - displays an alert located at the bottom of the screen;
+// - .center - displays an alert located at the center of the screen.
 //
-// 'alignmentType' values:
-// - .separately 
-// - .inner
-// - .none
+// 'actionType' values:
+// - .separately - displays an alert with a bottom action button located separately;
+// - .inner - displays an alert with an action button located insite the alert;
+// - .none - displays an alert without a button.
 
 let sheet = Self.init(
       with: titleMessage,
