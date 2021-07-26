@@ -1,16 +1,15 @@
-# SheetViewController
+<p align="center">
+  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/00-preview.png?raw=true">
+</p>
 
 [![CI Status](https://img.shields.io/travis/antonyereshchenko@gmail.com/SheetViewController.svg?style=flat)](https://travis-ci.org/antonyereshchenko@gmail.com/SheetViewController)
 [![Version](https://img.shields.io/cocoapods/v/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![License](https://img.shields.io/cocoapods/l/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 
+# SheetViewController
+
 SheetViewController is a fully customizable and native-like alert sheet controller UI component written in Swift.
-
-<p align="center">
-  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/00-preview.png?raw=true">
-</p>
-
 
 ## Features
 
