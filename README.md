@@ -20,12 +20,6 @@ SheetViewController is a fully customizable and native-like alert sheet controll
 - [x] Easy to use.
 - [x] Works on both orientations: portrait, landscape.
 
-### Demo
-
-<p align="center">
-  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
-</p>
-
 ## UI customization Q&A
 
 ### How to change the color?
@@ -112,6 +106,12 @@ alert.addRow(actionView: row)
 
 present(alert, animated: true, completion: nil)
 ```
+
+### Demo
+
+<p align="center">
+  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
+</p>
 
 ## Author
 
