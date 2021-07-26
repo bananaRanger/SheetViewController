@@ -22,8 +22,6 @@ SheetViewController is a fully customizable and native-like alert sheet controll
 
 ### Demo
 
-Interaction with ```SheetViewController``` that have ```.inner``` action type:
-
 <p align="center">
   <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
 </p>
