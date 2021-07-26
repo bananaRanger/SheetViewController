@@ -23,93 +23,90 @@
 import UIKit
 
 open class SheetViewController: UIViewController, SheetController {
+  //MARK: properties
+  private var _title: String?
+  private var _message: String?
   private var _alignmentType = SheetAlignmentType.bottom
   private var _actionType = SheetActionType.separately
   private let _animatedPresenting = AnimatedPresenting()
   private let _animatedDismissing = AnimatedDismissing()
   private var _containerViewCenter: CGPoint?
+  private var configuration: SheetContainerConfiguration = ContainerConfiguration.default
   
-  private var headerTitle: String?
-  private var headerMessage: String?
-  private var actionTitle: String?
+  public typealias DidClose = (() -> Void)
+  
+  public var didClose: DidClose?
   
   public var containerView: ContainerView?
   
-  public var sheetActionType: SheetActionType?
-  public var verticalOffset: CGFloat?
+  public var alignmentType: SheetAlignmentType? { return _alignmentType }
+  public var actionType: SheetActionType? { return _actionType }
+  
   public var animatedPresenting: UIViewControllerAnimatedTransitioning? {
     return _animatedPresenting
   }
+  
   public var animatedDismissing: UIViewControllerAnimatedTransitioning? {
     return _animatedDismissing
   }
   
-  public static func alert(with title: String?,
-                           message: String?,
-                           alignmentType: SheetAlignmentType = .bottom,
-                           actionType: SheetActionType = .separately,
-                           isSeparately: Bool? = true,
-                           transitionBackgroundColor: UIColor = .black) -> SheetController {
-    let alert = SheetViewController()
-    let factory = ContainerViewFactory(parent: alert.view)
-    factory.headerTitle = title
-    factory.headerMessage = message
-    factory.isSeparately = isSeparately
-    alert.containerView = factory.containerView(with: alignmentType, and: actionType)
-    alert._alignmentType = alignmentType
-    alert._actionType = actionType
-    alert._animatedPresenting.transitionBackgroundColor = transitionBackgroundColor
-    alert.modalPresentationStyle = .overCurrentContext
-    alert.view.backgroundColor = .clear
-    alert.transitioningDelegate = alert
-    return alert
-  }
-  
+  //MARK: inits
   private init() {
-    super.init(nibName:nil, bundle:nil)
+    super.init(nibName: nil, bundle: nil)
   }
   
   required public init?(coder: NSCoder) {
     super.init(coder: coder)
   }
   
-  public typealias DidClose = (() -> ())
-  
-  public var didClose: DidClose?
-  
   required public init(with title: String?,
-       message: String?,
-       alignmentType: SheetAlignmentType = .bottom,
-       actionType: SheetActionType = .separately,
-       isSeparately: Bool? = true,
-       transitionBackgroundColor: UIColor = .black) {
+                       message: String?,
+                       alignmentType: SheetAlignmentType,
+                       actionType: SheetActionType,
+                       modifier: ContainerConfigurationModifier? = nil) {
     super.init(nibName: nil, bundle: nil)
-    let factory = ContainerViewFactory(parent: self.view)
-    factory.headerTitle = title
-    factory.headerMessage = message
-    factory.isSeparately = isSeparately
-    self.containerView = factory.containerView(with: alignmentType, and: actionType)
+
+    self.modalPresentationStyle = .overCurrentContext
+    self.transitioningDelegate = self
+    
+    self._title = title
+    self._message = message
     self._alignmentType = alignmentType
     self._actionType = actionType
-    self._animatedPresenting.transitionBackgroundColor = transitionBackgroundColor
-    self.modalPresentationStyle = .overCurrentContext
-    self.view.backgroundColor = .clear
-    self.transitioningDelegate = self
+    
+    var configuration = ConfigurationFactory.configuration(
+      with: alignmentType,
+      and: actionType
+    )
+    
+    if let modifier = modifier {
+      self.configuration = modifier(&configuration)
+    } else {
+      self.configuration = configuration
+    }
+    
+    self._animatedPresenting.transitionBackgroundColor = configuration.transitionBackgroundColor
   }
   
-  override public func present(_ viewControllerToPresent: UIViewController,
-                               animated flag: Bool,
-                               completion: (() -> Void)? = nil) { }
-  
-  public func addView(_ view: UIView) {
-    containerView?.content?.addBodyView(view)
+  //MARK: methods
+  open override func viewDidLoad() {
+    super.viewDidLoad()
+    view.backgroundColor = .clear
+    
+    let containerFactory = ContainerViewFactory(
+      parent: self.view,
+      configuration: configuration,
+      headerTitle: _title,
+      headerMessage: _message
+    )
+    
+    self.containerView = containerFactory.containerView(
+      with: _alignmentType,
+      and: _actionType
+    )
   }
   
-  public func addRow(actionView: SheetItemActionView) {
-    addView(actionView)
-  }
-  
-  override public func viewWillAppear(_ animated: Bool) {
+  override open func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     let gesture = UIPanGestureRecognizer(
       target: self,
@@ -119,24 +116,32 @@ open class SheetViewController: UIViewController, SheetController {
     containerView?.isUserInteractionEnabled = true
   }
   
-  override public func viewDidAppear(_ animated: Bool) {
+  override open func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     resetContainerViewCenter()
   }
   
-  public func setCancelButton(title: String?,
+  override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+    guard touches.first?.view == view else { return }
+    closeSheet()
+  }
+  
+  open func addView(_ view: UIView) {
+    containerView?.content?.addBodyView(view)
+  }
+  
+  open func addRow(actionView: SheetItemActionView) {
+    addView(actionView)
+  }
+  
+  open func setCancelButton(title: String?,
                               and handler: ActionButtonTouchUpInsideHandler?) {
     containerView?.action?.textLabel?.text = title
     containerView?.action?.handler = { [weak self] in
       self?.closeSheet()
       handler?()
     }
-  }
-  
-  override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesBegan(touches, with: event)
-    guard touches.first?.view == view else { return }
-    closeSheet()
   }
 }
 
@@ -197,33 +202,29 @@ extension SheetViewController {
     let vSizeClass = traitCollection.verticalSizeClass
     let isPortrait = hSizeClass == .compact && vSizeClass == .regular
     
-    let configuration = ContainerViewFactory.configuration(
-      with: _alignmentType,
-      and: _actionType)
-    
     view.constraints.forEach { constraint in
       if constraint.firstAttribute == .top {
         constraint.constant = isPortrait ?
-          (configuration.outerSpacing.height * configuration.outerMultiplier) :
+          configuration.outerSpacing.height * configuration.portraitTopOuterMultiplier :
           configuration.outerSpacing.height
       } else if constraint.firstAttribute == .left {
         constraint.constant = isPortrait ?
           configuration.outerSpacing.width :
-          (configuration.outerSpacing.width + (view.frame.width / 5))
+          (configuration.outerSpacing.width +
+            (view.frame.width / configuration.landscapeHorizontalOuterDivider))
       } else if constraint.firstAttribute == .right {
         constraint.constant = isPortrait ?
           -configuration.outerSpacing.width :
-          (-configuration.outerSpacing.width - (view.frame.width / 5))
+          (-configuration.outerSpacing.width -
+            (view.frame.width / configuration.landscapeHorizontalOuterDivider))
       }
     }
-    
     updateViewConstraints()
   }
   
   override public func viewWillTransition(
     to size: CGSize,
     with coordinator: UIViewControllerTransitionCoordinator) {
-    
     super.viewWillTransition(to: size, with: coordinator)
     coordinator.animate(alongsideTransition: nil) { [weak self] context in
       self?.resetContainerViewCenter()

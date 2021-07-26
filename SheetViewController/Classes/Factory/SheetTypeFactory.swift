@@ -22,41 +22,25 @@
 
 import UIKit
 
-//MARK: - ContainerViewFactory
 class ContainerViewFactory {
-  
-  //MARK: - Properties
+  //MARK: properties
   var parent: UIView
+  var configuration: SheetContainerConfiguration
+  
   var headerTitle: String?
   var headerMessage: String?
   
-  var isSeparately: Bool?
-  
-  //MARK: - Inits
-  init(parent: UIView) {
+  //MARK: inits
+  init(parent: UIView, configuration: SheetContainerConfiguration, headerTitle: String? = nil, headerMessage: String? = nil) {
     self.parent = parent
+    self.configuration = configuration
+    self.headerTitle = headerTitle
+    self.headerMessage = headerMessage
   }
   
-  //MARK: - Methods
-  static func configuration(with alignmentType: SheetAlignmentType,
-                            and actionType: SheetActionType) -> ContainerConfiguration {
-    switch actionType {
-    case .separately:
-      return SeparatelyContainerConfigurationBuilder.create(with: alignmentType)
-    case .inner:
-      return InnerContainerConfigurationBuilder.create(with: alignmentType)
-    case .none:
-      return NoneContainerConfigurationBuilder.create(with: alignmentType)
-    }
-  }
-  
+  //MARK: methods
   func containerView(with alignmentType: SheetAlignmentType,
                      and actionType: SheetActionType) -> ContainerView {
-    
-    let configuration = ContainerViewFactory.configuration(
-      with: alignmentType,
-      and: actionType)
-
     switch actionType {
     case .separately:
       let container = ContainerViewSeparatelyActionBuilder(
@@ -66,9 +50,8 @@ class ContainerViewFactory {
       
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
-      container.isSeparately = isSeparately
       container.alignmentType = alignmentType
-
+      
       return container.create()
     case .inner:
       let container = ContainerViewInnerActionBuilder(
@@ -78,9 +61,8 @@ class ContainerViewFactory {
       
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
-      container.isSeparately = isSeparately
       container.alignmentType = alignmentType
-
+      
       return container.create()
     case .none:
       let container = ContainerViewNoneActionBuilder(
@@ -90,11 +72,9 @@ class ContainerViewFactory {
       
       container.headerTitle = headerTitle
       container.headerMessage = headerMessage
-      container.isSeparately = isSeparately
       container.alignmentType = alignmentType
       
       return container.create()
     }
   }
-  
 }

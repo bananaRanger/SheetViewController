@@ -1,78 +1,55 @@
-# SheetViewController
+<p align="center">
+  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/00-preview.png?raw=true">
+</p>
 
 [![CI Status](https://img.shields.io/travis/antonyereshchenko@gmail.com/SheetViewController.svg?style=flat)](https://travis-ci.org/antonyereshchenko@gmail.com/SheetViewController)
 [![Version](https://img.shields.io/cocoapods/v/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![License](https://img.shields.io/cocoapods/l/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 [![Platform](https://img.shields.io/cocoapods/p/SheetViewController.svg?style=flat)](https://cocoapods.org/pods/SheetViewController)
 
+# SheetViewController
+
+SheetViewController is a fully customizable and native-like alert sheet controller UI component written in Swift.
+
+## Features
+
+- [x] Three types of alerts: with inner action, with outer action, without action.
+- [x] Two alignment types of alerts: bottom, center.
+- [x] Fully customisation components. You can customise content (header, actions), color, fonts, forms, spaces and etc.
+- [x] Works on iPad.
+- [x] Easy to use.
+- [x] Works on both orientations: portrait, landscape.
+
+## UI customization Q&A
+
+### How to change the color?
+
 <p align="center">
-  <img width="64%" height="64%" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/logo.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/01-how%20to%20change%20the%20color.png?raw=true">
 </p>
 
-## About
-
-Customizable native-like sheet alert controller with three action types: separately, inner, none.
-
-### Demo
-
-Interaction with ```SheetViewController``` that have ```.inner``` action type:
+### How to change the corner radius?
 
 <p align="center">
-  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/02-how%20to%20change%20the%20corner%20radius.png?raw=true">
 </p>
 
-### Separately action type
-
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .separately)
-```
-
-#### Portrait
+### How to change the spacing?
 
 <p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_portrait.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/03-how%20to%20change%20the%20spacing.png?raw=true">
 </p>
 
-#### Landscape
+### How to change sheet offsets?
 
 <p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/separately_landscape.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/04-how%20to%20change%20sheet%20offsets.png?raw=true">
 </p>
 
-### Inner action type
-
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .inner)
-```
-
-#### Portrait
+### Other settings
 
 <p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_portrait.png?raw=true">
-</p>
-
-#### Landscape
-
-<p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/inner_landscape.png?raw=true">
-</p>
-
-### None action type
-
-```swift
-let alert = SheetViewController.alert(with: <title>, message: <message>, actionType: .none)
-```
-
-#### Portrait
-
-<p align="center">
-	<img width="187" height="406" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_portrait.png?raw=true">
-</p>
-
-#### Landscape
-
-<p align="center">
-	<img width="406" height="187" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/none_landscape.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/05-other%20settings.png?raw=true">
 </p>
 
 ## Example
@@ -87,7 +64,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 inhibit_all_warnings!
 
-target 'YOUR-TARGET-NAME' do
+target 'YOUR_TARGET_NAME' do
   use_frameworks!
 	pod 'SheetViewController'
 end
@@ -103,8 +80,25 @@ end
 //
 // 'customRowView' - the object of class 'UIView' or his inheritors.
 // 'row' - the object of class 'SheetItemActionView'.
+//
+// 'alignmentType' values:
+// - .bottom - displays an alert located at the bottom of the screen;
+// - .center - displays an alert located at the center of the screen.
+//
+// 'actionType' values:
+// - .separately - displays an alert with a bottom action button located separately;
+// - .inner - displays an alert with an action button located insite the alert;
+// - .none - displays an alert without a button.
 
-let alert = SheetViewController.alert(with: titleMessage, message: message, actionType: .inner)
+let sheet = Self.init(
+      with: titleMessage,
+      message: message,
+      alignmentType: .bottom,
+      actionType: .separately) { configuration in
+      	// UI customization (see UI customization Q&A section)
+        return configuration
+    }
+
 alert.setCancelButton(title: cancelTitle, and: cancelHandler)
 
 alert.addView(customRowView)
@@ -113,9 +107,15 @@ alert.addRow(actionView: row)
 present(alert, animated: true, completion: nil)
 ```
 
+### Demo
+
+<p align="center">
+  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
+</p>
+
 ## Author
 
-Anton Yereshchenko
+[📧](mailto:anton.yereshchenko@gmail.com?subject=[GitHub]%20Source%20SheetViewController) Anton Yereshchenko
 
 ## License
 

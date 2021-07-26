@@ -22,12 +22,11 @@
 
 import UIKit
 
-//MARK: - ViewBuilder protocol
 protocol ViewBuilder: class {
   associatedtype View
   
   var parent: UIView { get set }
   
-  init(parent: UIView, configuration: ContainerConfiguration)
+  init(parent: UIView, configuration: SheetContainerConfiguration)
   func create() -> View
 }

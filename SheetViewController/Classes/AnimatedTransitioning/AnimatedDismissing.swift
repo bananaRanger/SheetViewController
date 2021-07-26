@@ -23,17 +23,14 @@
 import UIKit
 
 class AnimatedDismissing: NSObject {
-  
-  //MARK: - Private structs
   private struct AnimationConfiguration {
-    static let delay: TimeInterval = 0
+    static let delay: TimeInterval = .zero
     static let colorKeyframe: (startTime: Double, duration: Double) = (0, 1)
     static let positionKeyframe: (startTime: Double, duration: Double) = (0, 0.5)
   }
   
-  //MARK: - Properties
+  //MARK: properties
   let duration: TimeInterval = 0.5
-  
 }
 
 //MARK: - UIViewControllerAnimatedTransitioning

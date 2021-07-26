@@ -23,8 +23,7 @@
 import UIKit
 
 public class ClickableView: UIView {
-  
-  //MARK: - Properties
+  //MARK: properties
   private var _isShadow: Bool = false
   
   public typealias ClickHandler = ((UIView) -> Void)
@@ -43,7 +42,7 @@ public class ClickableView: UIView {
     }
   }
   
-  //MARK: - Private structs
+  //MARK: private structs
   private struct AnimationDuration {
     static let touchDown: TimeInterval = 0.16
     static let touchUp: TimeInterval = 0.32
@@ -53,7 +52,7 @@ public class ClickableView: UIView {
     static let alphaComponent: (active: CGFloat, inactive: CGFloat) = (1.0, 0.32)
   }
   
-  //MARK: - Overrided methods
+  //MARK: methods
   override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
     UIView.animate(withDuration: AnimationDuration.touchDown) { [weak self] in
@@ -82,7 +81,6 @@ public class ClickableView: UIView {
     })
     clickHandler?(self)
   }
-  
 }
 
 //MARK: - Fileprivate extension of CALayer
@@ -112,8 +110,8 @@ fileprivate extension CALayer {
   
   func removeShadow() {
     shadowColor = nil
-    shadowOpacity = 0
+    shadowOpacity = .zero
     shadowOffset = .zero
-    shadowRadius = 0
+    shadowRadius = .zero
   }
 }

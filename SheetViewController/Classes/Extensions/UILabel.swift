@@ -20,15 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
+import UIKit.UILabel
 
-//MARK: - UILabel extension
 extension UILabel {
   private struct Configuration {
     static let textFontSize: CGFloat = 12
     static let actionFontSize: CGFloat = 16
     static let actionNumberOfLines: Int = 2
-    static let textNumberOfLines: Int = 0
+    static let textNumberOfLines: Int = .zero
   }
   
   public enum TextType: Int {
@@ -43,15 +42,12 @@ extension UILabel {
     }
   }
   
-  public static func label(with text: String?, type: TextType) -> UILabel {
+  //MARK: methods
+  public static func label(with text: String?, color: UIColor?, type: TextType) -> UILabel {
     let fontSize = type.isAction() ?
       Configuration.actionFontSize :
       Configuration.textFontSize
-    
-    let color = type.isAction() ?
-      UIColor.action :
-      UIColor.message
-    
+        
     let font = type.isBold() ?
       UIFont.boldSystemFont(ofSize: fontSize) :
       UIFont.systemFont(ofSize: fontSize)

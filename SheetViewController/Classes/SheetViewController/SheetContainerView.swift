@@ -22,11 +22,7 @@
 
 import UIKit
 
-//MARK: - SheetContainerView class
 public class SheetContainerView: UIView, ContainerView {
-  
-  //MARK: - Properties
   public var content: ContentView?
   public var action: ActionView?
-  
 }

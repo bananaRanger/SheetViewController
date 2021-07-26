@@ -22,14 +22,14 @@
 
 import UIKit
 
-//MARK: - SheetActionView class
 public class SheetActionView: ClickableView, ActionView {
-  
-  //MARK: - Properties
+  //MARK: properties
   public var textLabel: UILabel?
   public var handler: ActionButtonTouchUpInsideHandler?
 
-  //MARK: - Inits
+  private var _textColor: UIColor?
+  
+  //MARK: inits
   override public init(frame: CGRect) {
     super.init(frame: frame)
     setup()
@@ -40,8 +40,9 @@ public class SheetActionView: ClickableView, ActionView {
     setup()
   }
   
-  public init(frame: CGRect = .zero, title: String?) {
+  public init(frame: CGRect = .zero, title: String?, color: UIColor?) {
     super.init(frame: frame)
+    self._textColor = color
     setup(with: title)
   }
 }
@@ -51,7 +52,7 @@ fileprivate extension SheetActionView {
   private func setup(with title: String? = nil) {
     clickHandler = { [weak self] view in self?.handler?() }
     
-    let label = UILabel.label(with: title, type: .cancelAction)
+    let label = UILabel.label(with: title, color: _textColor, type: .cancelAction)
     addSubview(label)
     label.addAllSidesAnchors(to: self)
     self.textLabel = label

@@ -15,7 +15,8 @@
 		2984E276217B8B2C01C63AA54F2B53CF /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */; };
 		3142F146BC4967A48B46141DF2290C26 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */; };
 		39436D8B7FF83194D5E9D6670B5E64FA /* SheetViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83997E2E38DA26307ED968AC45E77B0 /* SheetViewController-dummy.m */; };
-		398E6A431215DEF260E4F01121B07C17 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */; };
+		407B163324EA97D7009F8F57 /* ConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B163124EA97AA009F8F57 /* ConfigurationFactory.swift */; };
+		40E45C6824EF9B7C006BEDED /* SheetContainerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E45C6624EF9B43006BEDED /* SheetContainerConfiguration.swift */; };
 		72590AC2A0FF7CB4195D79AB72A6E117 /* SheetContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */; };
 		76593E19D7D2DF29C47404D1E8F17F55 /* SheetContentViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */; };
 		8E3C29B258BC05AFFE75BE59EF05BAF4 /* SheetItemActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */; };
@@ -63,15 +64,17 @@
 		0BF35C8B44A45578A4C8725FA53E4EA7 /* ContainerViewSeparatelyActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewSeparatelyActionBuilder.swift; sourceTree = "<group>"; };
 		151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SheetViewController_Tests.framework; path = "Pods-SheetViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2890F22F652801ED7E5B079E5E9B3B0C /* Pods_SheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheetViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CC3A9F574B7B6A6D896F3AF37BB01 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		2D0EEED901E4345816BDE26E64CB19AC /* SheetViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-prefix.pch"; sourceTree = "<group>"; };
 		2D4E1358218688659358A0C6915196F1 /* Contract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		323C463D944A57B48F5B5764596EFA99 /* Pods-SheetViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		33F122D791666177D5F3BBABF22E0348 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		33F122D791666177D5F3BBABF22E0348 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		39155B877CEF27E16C5A156DF58422AA /* SheetViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SheetViewController.modulemap; sourceTree = "<group>"; };
 		3CA10FF7AEB1B46B9CCCF341B85D2AC9 /* ContainerConfigurationBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerConfigurationBuilder.swift; sourceTree = "<group>"; };
+		407B163124EA97AA009F8F57 /* ConfigurationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationFactory.swift; sourceTree = "<group>"; };
+		40E45C6624EF9B43006BEDED /* SheetContainerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetContainerConfiguration.swift; sourceTree = "<group>"; };
 		43993C074671E639E8470A7F9FC4DA68 /* SheetActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetActionView.swift; sourceTree = "<group>"; };
 		454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
 		4806A0DB7F8D2B039A9C19ADBCC04849 /* SheetItemActionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetItemActionView.swift; sourceTree = "<group>"; };
@@ -87,19 +90,18 @@
 		5D7A444487653ACB2AD56E587BA35C4B /* SheetContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContainerView.swift; sourceTree = "<group>"; };
 		612E93F0F293E6BC3E7FF46621240EC4 /* Pods-SheetViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SheetViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		63DECAE1B141594B09846ED01A868EBF /* Pods-SheetViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SheetViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentViewBuilder.swift; sourceTree = "<group>"; };
-		6C953B36839ED0DAA5901EF8A102BEEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6C953B36839ED0DAA5901EF8A102BEEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		748C6477F0D4BBCB648E4F1F30174A31 /* ContainerViewNoneActionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContainerViewNoneActionBuilder.swift; sourceTree = "<group>"; };
-		8555C9CD44647899513B02CD19F82554 /* SheetViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SheetViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8555C9CD44647899513B02CD19F82554 /* SheetViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SheetViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E9BD0AC4393E7A5373B796E0AA06AD4 /* SheetViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SheetViewController-umbrella.h"; sourceTree = "<group>"; };
 		99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SheetViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9A373B4E4196EAB047537AC62013F6B7 /* SheetContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D94F596EED531F875FB28B7DB6DB101 /* Pods-SheetViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SheetViewController_Example.modulemap"; sourceTree = "<group>"; };
 		B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedPresenting.swift; sourceTree = "<group>"; };
-		B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SheetViewController.framework; path = SheetViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC936773D6FCCB7AF244AF214A90FBE5 /* Pods_SheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SheetViewController_Example.framework; path = "Pods-SheetViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51978510F9721D48DF1EC28357791DE /* SheetViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SheetViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC936773D6FCCB7AF244AF214A90FBE5 /* Pods_SheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheetViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C0BEAF4A6C3A78DC34A3A060C229DEFC /* Pods-SheetViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SheetViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0DE052CBEB9B283BDE0364AB9E8C47F /* SheetViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SheetViewController.xcconfig; sourceTree = "<group>"; };
@@ -162,25 +164,33 @@
 			children = (
 				6BC93E669AB773B7BE5F2B7C9E4D8F0E /* SheetContentViewBuilder.swift */,
 			);
-			name = SheetContentViewBuilder;
 			path = SheetContentViewBuilder;
 			sourceTree = "<group>";
 		};
 		29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */ = {
 			isa = PBXGroup;
 			children = (
-				E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */,
 				B01912CB58E9E7B118CB06B3B352D4AC /* AnimatedPresenting.swift */,
+				E9E9F481B3F2B19B7C1ABD71936A9BD0 /* AnimatedDismissing.swift */,
 			);
 			name = AnimatedTransitioning;
 			path = SheetViewController/Classes/AnimatedTransitioning;
 			sourceTree = "<group>";
 		};
+		40E45C6B24EF9BAC006BEDED /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				40E45C6624EF9B43006BEDED /* SheetContainerConfiguration.swift */,
+				5237C6A47F4A127E364FD6C9AA749DB5 /* ContainerConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		4E01CE9CA90AAE3B81D5DA20654E63CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */,
 				BCBDD36201E23C3BA68F555DF30B8FB5 /* CustomView.swift */,
+				454261D1A723663DAF829C947ADC52FD /* ClickableView.swift */,
 			);
 			name = Views;
 			path = SheetViewController/Classes/Views;
@@ -201,13 +211,13 @@
 			children = (
 				FED3F07B9062CC8CD3EB8256D1FE2BA3 /* SheetActionViewBuilder.swift */,
 			);
-			name = SheetActionViewBuilder;
 			path = SheetActionViewBuilder;
 			sourceTree = "<group>";
 		};
 		8BB87324048D07D884F673B422A4775E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				407B163124EA97AA009F8F57 /* ConfigurationFactory.swift */,
 				08FEDE539B8CCCB8B7471E0AA0048E07 /* SheetTypeFactory.swift */,
 			);
 			name = Factory;
@@ -217,7 +227,6 @@
 		982868EF96761B08DEA62D268B62812C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				64DC1DF0D2A667252FBEF728742E552A /* UIColor.swift */,
 				244BAF8FD761AE79342FED6BB6C0B61F /* UILabel.swift */,
 				4C9ACAA0BB8EE1FEC533849A41F60F91 /* UIView.swift */,
 			);
@@ -316,14 +325,14 @@
 		E3D7A736FA1E620BA0F5500E1659BAF7 /* SheetViewController */ = {
 			isa = PBXGroup;
 			children = (
+				982868EF96761B08DEA62D268B62812C /* Extensions */,
+				4E01CE9CA90AAE3B81D5DA20654E63CF /* Views */,
 				29AF2466FE6DA49F733EDCF4F6EDFB5F /* AnimatedTransitioning */,
 				BA958EBE5B421D263F1B2B23224851B9 /* Builder */,
-				982868EF96761B08DEA62D268B62812C /* Extensions */,
 				8BB87324048D07D884F673B422A4775E /* Factory */,
-				99FEB6AEC9D81E37BD3C7337B468A833 /* Pod */,
 				048A197DB5DC6B204CA3DFAD5B33B40E /* SheetViewController */,
+				99FEB6AEC9D81E37BD3C7337B468A833 /* Pod */,
 				BD58F793E015799BDDDD27417B0569C4 /* Support Files */,
-				4E01CE9CA90AAE3B81D5DA20654E63CF /* Views */,
 			);
 			name = SheetViewController;
 			path = ../..;
@@ -341,14 +350,13 @@
 		F31686A36A75D31F48481ACFDF41C204 /* ContainerViewBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				5237C6A47F4A127E364FD6C9AA749DB5 /* ContainerConfiguration.swift */,
+				40E45C6B24EF9BAC006BEDED /* Configuration */,
 				3CA10FF7AEB1B46B9CCCF341B85D2AC9 /* ContainerConfigurationBuilder.swift */,
 				5C26DE722D5B75C0796B00E85A465DCD /* ContainerViewBuilder.swift */,
 				C9B10C2D8C02EB5BFE5B164534A44F35 /* ContainerViewInnerActionBuilder.swift */,
 				748C6477F0D4BBCB648E4F1F30174A31 /* ContainerViewNoneActionBuilder.swift */,
 				0BF35C8B44A45578A4C8725FA53E4EA7 /* ContainerViewSeparatelyActionBuilder.swift */,
 			);
-			name = ContainerViewBuilder;
 			path = ContainerViewBuilder;
 			sourceTree = "<group>";
 		};
@@ -462,6 +470,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					C88D6DBD61C25DD9B19EF057CDAB2D25 = {
+						LastSwiftMigration = 1160;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -543,11 +556,12 @@
 				72590AC2A0FF7CB4195D79AB72A6E117 /* SheetContainerView.swift in Sources */,
 				CE3FDD30813BF188BD43CAAC92F458A2 /* SheetContentView.swift in Sources */,
 				76593E19D7D2DF29C47404D1E8F17F55 /* SheetContentViewBuilder.swift in Sources */,
+				40E45C6824EF9B7C006BEDED /* SheetContainerConfiguration.swift in Sources */,
 				8E3C29B258BC05AFFE75BE59EF05BAF4 /* SheetItemActionView.swift in Sources */,
 				C9251B18FD2A8E1AE06E58E8C8779B7D /* SheetTypeFactory.swift in Sources */,
 				39436D8B7FF83194D5E9D6670B5E64FA /* SheetViewController-dummy.m in Sources */,
 				2984E276217B8B2C01C63AA54F2B53CF /* SheetViewController.swift in Sources */,
-				398E6A431215DEF260E4F01121B07C17 /* UIColor.swift in Sources */,
+				407B163324EA97D7009F8F57 /* ConfigurationFactory.swift in Sources */,
 				9886BDBDC2BD6935A1466CF989994721 /* UILabel.swift in Sources */,
 				013EE98C93051E2798D45BAC37974A98 /* UIView.swift in Sources */,
 				D70DCC6271DE9164930478D02D93377A /* ViewBuilder.swift in Sources */,
@@ -577,6 +591,7 @@
 			baseConfigurationReference = 99EA6157E9245A9215670D6B934A9DDC /* Pods-SheetViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,6 +615,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -790,8 +807,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -836,6 +852,7 @@
 			baseConfigurationReference = 151058C7630CD41143BB2B01D2FB4659 /* Pods-SheetViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -859,6 +876,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
