@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/00-preview.png?raw=true">
+  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/00-preview.png?raw=true">
 </p>
 
 [![CI Status](https://img.shields.io/travis/antonyereshchenko@gmail.com/SheetViewController.svg?style=flat)](https://travis-ci.org/antonyereshchenko@gmail.com/SheetViewController)
@@ -25,31 +25,31 @@ SheetViewController is a fully customizable and native-like alert sheet controll
 ### How to change the color?
 
 <p align="center">
-  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/01-how%20to%20change%20the%20color.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/01-how%20to%20change%20the%20color.png?raw=true">
 </p>
 
 ### How to change the corner radius?
 
 <p align="center">
-  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/02-how%20to%20change%20the%20corner%20radius.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/02-how%20to%20change%20the%20corner%20radius.png?raw=true">
 </p>
 
 ### How to change the spacing?
 
 <p align="center">
-  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/03-how%20to%20change%20the%20spacing.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/03-how%20to%20change%20the%20spacing.png?raw=true">
 </p>
 
 ### How to change sheet offsets?
 
 <p align="center">
-  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/04-how%20to%20change%20sheet%20offsets.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/04-how%20to%20change%20sheet%20offsets.png?raw=true">
 </p>
 
 ### Other settings
 
 <p align="center">
-  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/2.0.0/Resources/05-other%20settings.png?raw=true">
+  <img width="58%" height="58%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/05-other%20settings.png?raw=true">
 </p>
 
 ## Example
