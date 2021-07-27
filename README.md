@@ -73,10 +73,11 @@ end
 ## Usage
 
 ```swift
+import SheetViewController
+
 // 'titleMessage' - title for alert.
 // 'message' - message for alert.
 // 'cancelTitle' - title for bottom button.
-// 'cancelHandler' - the handler of bottom button click.
 //
 // 'customRowView' - the object of class 'UIView' or his inheritors.
 // 'row' - the object of class 'SheetItemActionView'.
@@ -90,21 +91,24 @@ end
 // - .inner - displays an alert with an action button located insite the alert;
 // - .none - displays an alert without a button.
 
-let sheet = Self.init(
+let sheet = SheetViewController(
       with: titleMessage,
       message: message,
       alignmentType: .bottom,
       actionType: .separately) { configuration in
-      	// UI customization (see UI customization Q&A section)
+        // UI customization (see UI customization Q&A section)
         return configuration
     }
 
-alert.setCancelButton(title: cancelTitle, and: cancelHandler)
+present(sheet, animated: true, completion: nil)
 
-alert.addView(customRowView)
-alert.addRow(actionView: row)
+sheet.addView(customRowView)
+sheet.addRow(actionView: row)
 
-present(alert, animated: true, completion: nil)
+sheet.setCancelButton(title: cancelTitle) {
+      print("Cancel button did click")
+}
+
 ```
 
 ### Demo
