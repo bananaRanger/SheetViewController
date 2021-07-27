@@ -110,7 +110,7 @@ present(alert, animated: true, completion: nil)
 ### Demo
 
 <p align="center">
-  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/demo.gif?raw=true">
+  <img width="216" height="417" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/short-demo.gif?raw=true">
 </p>
 
 ## Author
