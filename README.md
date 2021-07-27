@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/Resources/00-preview.png?raw=true">
+  <img width="72%" height="72%" src="https://github.com/bananaRanger/SheetViewController/blob/master/Resources/00-preview.png?raw=true">
 </p>
 
 [![CI Status](https://img.shields.io/travis/antonyereshchenko@gmail.com/SheetViewController.svg?style=flat)](https://travis-ci.org/antonyereshchenko@gmail.com/SheetViewController)
